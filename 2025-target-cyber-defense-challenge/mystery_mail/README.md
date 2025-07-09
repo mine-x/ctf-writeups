@@ -1,9 +1,12 @@
-# Introduction
+# Mystery mail
+Points: 100
+
+## Introduction
 As a member of Personalyz.io's Cybersecurity team, I've received an extortion email at the top of my inbox, claiming that sensitive data has been stolen from the company. The email demands a ransom and threatens to release the data if the demand is not met within 48 hours.  
 
 The first task is to determine the unknown sender's original IP address using the provided email file.
 
-# Email sender header
+## Email sender header
 ![ransom email](https://github.com/user-attachments/assets/4ac56601-4cea-4b3a-ab42-e592063ac4e2)
 To check the email sender header of this email message, I downloaded and opened the email in Outlook desktop (classic) and went to File > Properties to view the Internet headers.  
 ```
