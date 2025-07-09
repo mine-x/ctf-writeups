@@ -8,10 +8,10 @@ The task is to search through SMTP logs in an OpenSearch dashboard to find the f
 I started by searching for the originating IP address ```252.44.98.29``` and only found 1 result, the same ransom email message that was provided in the previous task.
 ```log
 From: "Samantha Green" <sgreen123@gwagm.co>
-Rcptto (recipient): security@personalyz.io
+Rcptto: security@personalyz.io
 User_Agent: XyzMailer
 Path: 252.44.98.29, 250.24.46.164, 251.14.1.16, 245.31.211.54
-Helo (SMTP banner): gwagm.co 
+Helo: gwagm.co 
 Msg_id: <1742692263.849341@gwagm.co>
 ```
 I tried searching for similar email subject, but this turned up too many false positives. I also searched for the email domain and user agent and did not find anything useful.  
@@ -20,7 +20,7 @@ I went back to the known ransom email and took a closer look at other attributes
 Searching for this IP did turn up results - both the provided ransom email and another email sent one day prior.
 ![opensearch result](<opensearch dashboard.png>)
 
-The Subject and Path match what we are looking for. The email address of the first extortion email is:
+The Subject indicates this email is indeed part of this incident. The email address is:
 ```
 tharris456@tgwnaagm.co
 ```  
