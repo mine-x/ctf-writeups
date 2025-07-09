@@ -19,5 +19,5 @@ In Tier 1 of this CTF challenge, participiants play the part of the Cyber Defens
 - git commands
 
 **Table of Contents:**
-- [Mystery Mail](./Mystery_Mail)
+- [Mystery Mail](./mystery_mail)
 - 
