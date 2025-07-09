@@ -17,3 +17,7 @@ In Tier 1 of this CTF challenge, participiants play the part of the Cyber Defens
 - Wireshark PCAP analysis
 - Cyberchef encoding/decoding
 - git commands
+
+**Table of Contents:**
+- [Mystery Mail](./Mystery_Mail)
+- 
