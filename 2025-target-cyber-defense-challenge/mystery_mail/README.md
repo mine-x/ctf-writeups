@@ -2,16 +2,15 @@
 Points: 100
 
 ## Introduction
-As a member of Personalyz.io's Cybersecurity team, I've received an extortion email at the top of my inbox, claiming that sensitive data has been stolen from the company. The email demands a ransom and threatens to release the data if the demand is not met within 48 hours.  
+As a member of Personalyz.io's Cybersecurity team, we have received an extortion email at the top of my inbox, claiming that sensitive data has been stolen from the company. The email demands a ransom and threatens to release the data if the demand is not met within 48 hours.  
 
 The first task is to determine the unknown sender's original IP address using the provided email file.
 
 ## Email sender header
-![ransom email](https://github.com/user-attachments/assets/4ac56601-4cea-4b3a-ab42-e592063ac4e2)
+![ransom email](<ransom email.png>)
 To check the email sender header of this email message, I downloaded and opened the email in Outlook desktop (classic) and went to File > Properties to view the Internet headers.  
 ```
-Received:
- from 251.14.1.16 by mx3.personalyz.io; Sun, 23 Mar 2025 10:10:30 +0900
+Received: from 251.14.1.16 by mx3.personalyz.io; Sun, 23 Mar 2025 10:10:30 +0900
 Received: from 250.24.46.164 by klaviyo.com; Sun, 23 Mar 2025 10:10:15 +0900
 Received: from 252.44.98.29 by gwagm.co; Sun, 23 Mar 2025 10:09:50 +0900
 Date: Sun, 23 Mar 2025 10:11:03 +0900
