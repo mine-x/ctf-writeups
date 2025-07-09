@@ -5,11 +5,7 @@ In Tier 1 of this CTF challenge, participiants play the part of the Cyber Defens
 
 **Challenge Results:**
 - Tier 1: 
-  - Points: <points> out of <points>  
-  - Solves: <number> out of <number>
 - Tier 2:
-  - Points: <points> out of <points>  
-  - Solves: <number> out of <number>
 
 **Tools and Skills:**
 - SMTP log analysis
