@@ -4,7 +4,7 @@ Points: 100
 
 ## Objective
 
-As a member of Personalyz.io's Cybersecurity team, we have received an extortion email at the top of my inbox, claiming that sensitive data has been stolen from the company. The email demands a ransom and threatens to release the data if the demand is not met within 48 hours.  
+As a member of Personalyz.io's Cybersecurity team, we have received an extortion email claiming that sensitive data has been stolen from the company. The email demands a ransom and threatens to release the data if the demand is not met within 48 hours.  
 
 The first task is to determine the unknown sender's original IP address using the provided email file.
 
