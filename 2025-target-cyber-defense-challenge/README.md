@@ -1,21 +1,33 @@
 # WiCyS Target Cyber Defense Challenge 2025
 
-**Challenge Overview**:  
+## Challenge Overview
+
 In Tier 1 of this CTF challenge, participiants play the part of the Cyber Defense team to defend against current threats. Then, the top 50 from Tier 2 move on to play from the attacker's side. The final top 10 from Tier 2 present their Challenge experience to Target & WiCys, as well as receive a scholarship to the WiCyS 2026 conference.  
-Read more: https://www.wicys.org/benefits/cyber-defense-challenge-made-possible-by-target/
+Learn more [here](https://www.wicys.org/benefits/cyber-defense-challenge-made-possible-by-target/).
 
-**Challenge Results:**
-- Tier 1: 
-- Tier 2:
+**Results:**
 
-**Tools and Skills:**
+Tier 1: points, number of tasks solved, ranking  
+Tier 2: points, number of tasks solved, ranking
+
+## Tools and Skills
+
 - SMTP log analysis
 - Ransomware negotiation
 - Wireshark PCAP analysis
 - Cyberchef encoding/decoding
 - git commands
 
-**Table of Contents:**
-- [Mystery mail](./mystery_mail)
-- [Not-so-simple mail protocol](./not-so-simple_mail_protocol/)
-- 
+## Table of Contents
+
+**Tier 1 - Defensive:**
+
+1. [Mystery mail](./1_mystery_mail/)
+2. [Not-so-simple mail protocol](./2_not-so-simple_mail_protocol/)
+3. [Ransom wrangler](./3_ransom_wrangler/)
+5. [Ahoy PCAP'n!](./5_ahoy_pcap'n/)
+6. [Smuggled away](./6_smuggled_away/)
+
+**Tier 2 - Offensive:**
+
+1. Challenge
