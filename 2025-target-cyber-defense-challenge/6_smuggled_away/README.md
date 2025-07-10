@@ -9,7 +9,7 @@ Determine the credit card expiration date and CVV and the customer email being e
 ## Decoding
 
 Continuing from the last challenge, I searched for `dns and ip.addr == 251.91.13.37` in Wireshark and exported the 66 lines as CSV for analysis.
-Within the CSV, I took the domains, split by ".", and only took the subdomains. I filtered on the Source/Destination IPs to only focus on compromised host (`bvlik`) to C2 (`251.91.13.37`) communications. Finally, I consolidated all subdomains in the same order of the packets.
+Within the CSV, I extracted the domains, split by ".", and only kept the subdomains. I filtered on the Source/Destination IPs to only focus on compromised host (`bvlik`) to C2 (`251.91.13.37`) communications. Finally, I consolidated all subdomains into a single string:
 
 ```
 d6fqqaecfjjgqax7bxglcducgaiabuhz73remhou332tqyetdajb2zeqzgyway2mfzenv6x76ia665iwm4mk77pd3ygsbjbv6yqrp5hjqxr7us3qrffutqpqs3w3hqxqasrjuglwjtkr4g27dxmloddblphhtgw762oyehmxldaaxk4iunlbwjjbochhjqzh577bt4hmlrzqaaaa
