@@ -1,0 +1,42 @@
+0000000000000000000000000000000000000000 e472e44d441de3fea847b47648dc0d73cf77ba07 malbyte <malbyte@ubuntu.(none)> 1748527741 -0500	clone: from https://github.com/elesiuta/backupy.git
+e472e44d441de3fea847b47648dc0d73cf77ba07 d4fbc9930115082f4345219f378b6322ae3d3a15 erik <elesiuta@gmail.com> 1748527781 -0500	rebase (start): checkout a50a7657e3a00c0aa63455d7ac81e73f69f273b1~1
+d4fbc9930115082f4345219f378b6322ae3d3a15 a50a7657e3a00c0aa63455d7ac81e73f69f273b1 erik <elesiuta@gmail.com> 1748527781 -0500	rebase: fast-forward
+a50a7657e3a00c0aa63455d7ac81e73f69f273b1 b188b42c34f772d2d9ccc006692d65cd597fc57d erik <elesiuta@gmail.com> 1748528038 -0500	commit (amend): deprecate copy_function class attribute for newer FileOps
+b188b42c34f772d2d9ccc006692d65cd597fc57d d9fd3581d3b80834a65940d74fbac7ca51b00a96 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update examples
+d9fd3581d3b80834a65940d74fbac7ca51b00a96 c68dada3ad900f2ec0b469709a18318529bb78f5 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): refactoring
+c68dada3ad900f2ec0b469709a18318529bb78f5 8b5dc46e08f196a2147e70525806e56468b7b0dd erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): refactoring
+8b5dc46e08f196a2147e70525806e56468b7b0dd 4ab9c07f7f09a9f53117c2336c9098a45625e08a erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): version flag
+4ab9c07f7f09a9f53117c2336c9098a45625e08a a49a998f0baa345a4f9ac0f485d005432fce09c7 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): version 1.9.6
+a49a998f0baa345a4f9ac0f485d005432fce09c7 583eb16fadea5092375d7041fbd4bb960e47ff50 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): add crc of database to database and check on every load to detect possible corruption of database (or accidental modification)
+583eb16fadea5092375d7041fbd4bb960e47ff50 222611dcf4b114a4887680501573b6c6f79c98fc erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update tests for database self crc
+222611dcf4b114a4887680501573b6c6f79c98fc 0e3ec38ea13d7cc20f0fa777aa33f48ff965ee1d erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): add config type hints and an alternative config using Data Classes to make BackuPy more userfriendly with autocomplete when importing, is only used for initialization and won't replace ConfigObject
+0e3ec38ea13d7cc20f0fa777aa33f48ff965ee1d 5dca8d04a4913a3817790989dae55b233f4b2f35 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): on second thought, remove dataclass config, simpler to leave as is for maintenance and having a single, stable interface
+5dca8d04a4913a3817790989dae55b233f4b2f35 f922c29e9b5395ea89aae1a18b4f87ad0ba23663 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): clean up some comments, docstrings and init
+f922c29e9b5395ea89aae1a18b4f87ad0ba23663 05e94d7d2bb5e7d4db482fa04cbc87abe6ec0344 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update callgraph
+05e94d7d2bb5e7d4db482fa04cbc87abe6ec0344 921c591c090f3f0bb7b70f4f36f8c48e7e34de95 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): more useful verbose flag, no changes for default behaviour (True), but setting verbose to False will now print all status messages but omit list of files (will need to view log or file tree with curses)
+921c591c090f3f0bb7b70f4f36f8c48e7e34de95 2d269dcc433e58130d9f664cf6b646a47b1d50a0 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): include utils.FileOps in __init__ so linters will pick it up if writing extension for backupy
+2d269dcc433e58130d9f664cf6b646a47b1d50a0 56124681c82422827467980056c3f9c999e18449 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update documentation
+56124681c82422827467980056c3f9c999e18449 186647bb7ef994d495581f7dab14a7d7ed65253f erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): fix running installed package
+186647bb7ef994d495581f7dab14a7d7ed65253f ba249aa76fce2b44f19c6580566ba951a61eb0ab erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): better warning message for corrupted database
+ba249aa76fce2b44f19c6580566ba951a61eb0ab bc27304203c38286473604f0b36016f1e6605158 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update cli help
+bc27304203c38286473604f0b36016f1e6605158 ef8532abc66114c701913dfe8f337929ceb568ae erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): force posix paths for all tests so they also pass on windows (due to new database crc not matching)
+ef8532abc66114c701913dfe8f337929ceb568ae 844709782761e797e5e5aba81d94b37bb019527f erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): should actually fix tests on windows (kinda defeats the purpose of a couple of these tests) (should create a new batch from scratch at some point, using linux and adapt for windows after rather than the current windows->linux, and eventually replace the current tests with them once they reach the same coverage)
+844709782761e797e5e5aba81d94b37bb019527f 8699252af3598037a9b9af664c007586de761bcd erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): remove verbosePrint, turns out it wasn't needed since all status messages should still be printed whether verbose is True or False, just file info list is omitted (more practical since curses and an intermediate log are now an available)
+8699252af3598037a9b9af664c007586de761bcd 27727b4faee425c3cc9c735bd395c00063fec1e0 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update readme
+27727b4faee425c3cc9c735bd395c00063fec1e0 830ab09ba51fc3ccc4bf1f1e4537374f662bb277 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update readme
+830ab09ba51fc3ccc4bf1f1e4537374f662bb277 7699ee176db019c97da6752f49a9e64337e5a926 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update readme
+7699ee176db019c97da6752f49a9e64337e5a926 6e033e21003c3740d766c54b175737bac3c3e418 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): version 1.10.0
+6e033e21003c3740d766c54b175737bac3c3e418 0244a5a872b564ac67dccc11e9a9e15cfd79a349 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): version 1.10.1
+0244a5a872b564ac67dccc11e9a9e15cfd79a349 4f04bded5f26db955d87175488355296abd89275 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): cleanup code to reduce linter warnings (flake8 & pylance basic)
+4f04bded5f26db955d87175488355296abd89275 2546beee6e86a2a76ab564e2002c51e04757bf96 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): fixes for callgraph
+2546beee6e86a2a76ab564e2002c51e04757bf96 f19dc94da618658c904767c323ad75f7e7c0e9b6 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): fix more linter warnings (not sure if all of these changes are better in terms of readability and code safety, may revert some)
+f19dc94da618658c904767c323ad75f7e7c0e9b6 731effa8cad1026159a073c06e4dd5bce7804f7d erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): add coveragerc for https://pypi.org/project/coverage/
+731effa8cad1026159a073c06e4dd5bce7804f7d 78ae9203c671311291b218e398fcd7cfc4dcf63c erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): still works with python 3.7, target that at least until next ubuntu lts
+78ae9203c671311291b218e398fcd7cfc4dcf63c 3364c35c64931cd0eb7c9ad6f09d8463afc79f43 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): update snap to core22, add system-backup interface, build tag v1.10.1
+3364c35c64931cd0eb7c9ad6f09d8463afc79f43 6a27ae418b40fe9053d6902ad0c6f6312cde59b4 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): rename files on destination if included in forbidden-exts argument
+6a27ae418b40fe9053d6902ad0c6f6312cde59b4 1cff0d0b4e3d08978ad28593631dff6ab17f9c69 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): fix run in virtualenv
+1cff0d0b4e3d08978ad28593631dff6ab17f9c69 8aaec1095db1ec572281255ad09e998a6e615d5e erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): add missing parameters to gui
+8aaec1095db1ec572281255ad09e998a6e615d5e dd5408976bd79369ea19577061e1cccc2d97307f erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): add option to gui
+dd5408976bd79369ea19577061e1cccc2d97307f 9808069448236ee49197892308c99fd49ce7ae44 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (pick): fix delete
+9808069448236ee49197892308c99fd49ce7ae44 9808069448236ee49197892308c99fd49ce7ae44 erik <elesiuta@gmail.com> 1748528065 -0500	rebase (finish): returning to refs/heads/master
+9808069448236ee49197892308c99fd49ce7ae44 b188b42c34f772d2d9ccc006692d65cd597fc57d erik <elesiuta@gmail.com> 1751664098 -0700	checkout: moving from master to b188b42c34f772d2d9ccc006692d65cd597fc57d

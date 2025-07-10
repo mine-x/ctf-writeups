@@ -1,0 +1,281 @@
+PID         USER              FD       TYPE      DEVICE                  SIZE/OFF   NODE     NAME
+1           root              7u       IPv6      0x5641ac5e6c4ab264      0t0        TCP      *:ssh (LISTEN)
+1           root              8u       IPv4      0x6e63e0d1895c9a66      0t0        TCP      *:ssh (LISTEN)
+1           root              11u      IPv6      0x5641ac5e6c4ab264      0t0        TCP      *:ssh (LISTEN)
+1           root              12u      IPv4      0x6e63e0d1895c9a66      0t0        TCP      *:ssh (LISTEN)
+1           root              15u      IPv6      0x4784a3a37777e570      0t0        TCP      *:rfb (LISTEN)
+1           root              16u      IPv4      0xb5652ec75a45e64a      0t0        TCP      *:rfb (LISTEN)
+1           root              19u      IPv6      0x4784a3a37777e570      0t0        TCP      *:rfb (LISTEN)
+1           root              20u      IPv4      0xb5652ec75a45e64a      0t0        TCP      *:rfb (LISTEN)
+1           root              39u      IPv4      0xcb1e859d351a9728      0t0        UDP      *:netbios-dgm
+1           root              40u      IPv4      0x52f2eca396456452      0t0        UDP      *:netbios-ns
+382         root              32u      IPv6      0xbd16b55abb9cf817      0t0        ICMPV6   *:*
+413         root              10u      IPv4      0xeeff32cc1ff9d860      0t0        TCP      10.75.34.13:50503->17.57.144.135:5223 (ESTABLISHED)
+454         root              3u       IPv4      0x1b0cde5688a79b2b      0t0        UDP      *:*
+454         root              5u       IPv4      0x69fce61dac264a9d      0t0        UDP      *:*
+454         root              10u      IPv6      0x97d4dd8c2eba322e      0t0        UDP      *:*
+454         root              11u      IPv4      0xd48adb23f0ee672a      0t0        UDP      *:*
+454         root              12u      IPv4      0xd4d729dbc8359697      0t0        UDP      *:*
+454         root              14u      IPv4      0xc3201308af1906fb      0t0        UDP      *:*
+454         root              17u      IPv4      0x9238945000f2a0a1      0t0        UDP      *:*
+454         root              19u      IPv4      0x45d66aff219c2f06      0t0        UDP      *:*
+454         root              20u      IPv4      0xf79fba261b01cbbe      0t0        UDP      *:*
+454         root              21u      IPv4      0x11dda9441ecf9dd0      0t0        UDP      *:*
+454         root              24u      IPv4      0xcaf3e3dc78a6cd13      0t0        UDP      *:*
+454         root              25u      IPv4      0x26774b4ec72c790f      0t0        UDP      *:*
+457         _mdnsresponder    6u       IPv4      0xfbe20fbe98a66c68      0t0        UDP      *:mdns
+457         _mdnsresponder    7u       IPv6      0xdb255e7ca1c14642      0t0        UDP      *:mdns
+494         _networkd         29u      IPv4      0xec2b75c6e01af7d3      0t0        UDP      *:*
+577         root              4u       IPv4      0x477cf32f81ea6a76      0t0        UDP      *:*
+577         root              6u       IPv4      0x806258876d95658       0t0        UDP      *:*
+577         root              9u       IPv4      0xf0eab098a9f2dada      0t0        UDP      *:*
+582         root              3u       IPv4      0xf67df478e9c7ffe7      0t0        UDP      *:*
+637         root              5u       IPv4      0x3fd53851a7b7ba94      0t0        TCP      localhost:29754 (LISTEN)
+637         root              46u      IPv4      0xb00978d311d89520      0t0        TCP      localhost:29754->localhost:61773 (ESTABLISHED)
+637         root              75u      IPv4      0x1821d269def1a0d0      0t0        TCP      localhost:49154 (LISTEN)
+661         root              4u       IPv4      0x5a72225682a9bace      0t0        UDP      *:*
+661         root              6u       IPv4      0x1010bbb537fb21ab      0t0        UDP      *:*
+661         root              7u       IPv4      0x4996f93ff0fe5d46      0t0        UDP      *:*
+661         root              8u       IPv4      0x62201cb2714dd49a      0t0        UDP      *:*
+661         root              9u       IPv6      0xd63fb358ceb9546c      0t0        UDP      *:*
+662         root              4u       IPv6      0xf51691dacb051a7       0t0        UDP      *:kerberos
+662         root              5u       IPv6      0x27d3a634523344f8      0t0        TCP      *:kerberos (LISTEN)
+662         root              6u       IPv4      0x6224ca16eeb713ad      0t0        UDP      *:kerberos
+662         root              7u       IPv4      0x9b11571e5a3476d6      0t0        TCP      *:kerberos (LISTEN)
+664         root              15u      IPv4      0x336aa81caa524e66      0t0        TCP      10.75.34.13:49252->ec2-54-183-140-32.us-west-1.compute.amazonaws.com:https (ESTABLISHED)
+1196        backupsys         21u      IPv4      0x6763fe88b909767e      0t0        UDP      *:*
+1196        backupsys         26u      IPv4      0xbe9e1c18b71f33d7      0t0        UDP      *:*
+1296        backupsys         4u       IPv4      0xf883e215997edc31      0t0        UDP      *:*
+1657        backupsys         8u       IPv6      0x132e93b398ba3b75      0t0        UDP      *:51027
+2282        backupsys         10u      IPv4      0xfbf18303df3f73d8      0t0        TCP      10.75.34.13:57840->17.248.203.64:https (CLOSED)
+2316        backupsys         9u       IPv4      0xf38312dd0eef8ff1      0t0        TCP      10.75.34.13:50982->ussea4-vip-fx-103.a.aaplimg.com:https (CLOSED)
+2434        backupsys         23u      IPv4      0xf349a8455ea8f09b      0t0        TCP      localhost:61773->localhost:29754 (ESTABLISHED)
+2587        backupsys         18u      IPv4      0x2cb506b87065bf5e      0t0        TCP      10.75.34.13:58066->ec2-52-14-14-157.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+2587        backupsys         24u      IPv4      0x71b0034224dd8372      0t0        TCP      10.75.34.13:49199->ec2-3-20-1-85.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+2587        backupsys         25u      IPv4      0x6793a034cbc64280      0t0        TCP      10.75.34.13:49195->ec2-3-20-1-85.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+2587        backupsys         26u      IPv4      0x7e67deac3de6c54d      0t0        TCP      10.75.34.13:58077->ec2-3-130-95-182.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+4560        backupsys         21u      IPv4      0xf86dcd24fec47a3       0t0        TCP      10.75.34.13:65498->qj-in-f188.1e100.net:5228 (ESTABLISHED)
+4560        backupsys         26u      IPv4      0x5c21e185ec7198ce      0t0        TCP      10.75.34.13:65493->qj-in-f188.1e100.net:5228 (ESTABLISHED)
+4560        backupsys         27u      IPv4      0x302030e0deeb44b4      0t0        TCP      10.75.34.13:57002->45.55.122.20:https (ESTABLISHED)
+4560        backupsys         28u      IPv4      0xbe3925f138b43260      0t0        TCP      10.75.34.13:57883->ec2-3-233-158-26.compute-1.amazonaws.com:https (ESTABLISHED)
+4560        backupsys         29u      IPv4      0xfd9c0b6158ef4fdd      0t0        TCP      10.75.34.13:57159->ord38s28-in-f4.1e100.net:https (ESTABLISHED)
+4560        backupsys         33u      IPv4      0x66c53df109e91145      0t0        TCP      10.75.34.13:57173->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+4560        backupsys         34u      IPv4      0x7298bd47d18c8c48      0t0        TCP      10.75.34.13:57181->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+4560        backupsys         35u      IPv4      0x869f05677463b767      0t0        TCP      10.75.34.13:57160->ord38s28-in-f4.1e100.net:https (ESTABLISHED)
+4560        backupsys         36u      IPv4      0x3a8a73749bcbc3fa      0t0        TCP      10.75.34.13:57175->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+4560        backupsys         37u      IPv4      0x9ab6b53db053142e      0t0        TCP      10.75.34.13:57165->ord38s30-in-f10.1e100.net:https (ESTABLISHED)
+4560        backupsys         38u      IPv4      0x45985bc67ec69412      0t0        TCP      10.75.34.13:57177->ord38s30-in-f1.1e100.net:https (ESTABLISHED)
+4560        backupsys         41u      IPv4      0xf4fa242bc5f1d39       0t0        TCP      10.75.34.13:57230->172.217.2.46:https (ESTABLISHED)
+4560        backupsys         46u      IPv4      0xad68c9bc60d8274c      0t0        TCP      10.75.34.13:57196->ord38s30-in-f1.1e100.net:https (ESTABLISHED)
+4560        backupsys         47u      IPv4      0xa362594580b87ed6      0t0        TCP      10.75.34.13:57485->ord38s32-in-f3.1e100.net:https (ESTABLISHED)
+4560        backupsys         49u      IPv4      0x30bf4e7861603c28      0t0        TCP      10.75.34.13:57507->172.64.155.209:https (ESTABLISHED)
+4560        backupsys         51u      IPv4      0x58556172ea6975cc      0t0        TCP      10.75.34.13:57354->ord37s35-in-f22.1e100.net:https (ESTABLISHED)
+4560        backupsys         54u      IPv4      0xb3aa47f61b816ffd      0t0        TCP      10.75.34.13:57486->172.217.5.10:https (ESTABLISHED)
+4560        backupsys         56u      IPv4      0x100b46686f24e4af      0t0        TCP      10.75.34.13:57218->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+4560        backupsys         63u      IPv4      0x10e3d575af235219      0t0        TCP      10.75.34.13:57838->ord38s30-in-f10.1e100.net:https (ESTABLISHED)
+4560        backupsys         64u      IPv4      0x47388a751de00fbb      0t0        TCP      10.75.34.13:55159->104.18.35.23:https (ESTABLISHED)
+4560        backupsys         104u     IPv4      0x8c5a89807d1e86cd      0t0        UDP      *:mdns
+4560        backupsys         107u     IPv6      0x48b600c6889a5b38      0t0        UDP      *:mdns
+4560        backupsys         112u     IPv6      0x2bc3e3ec87964ea5      0t0        UDP      *:mdns
+4560        backupsys         113u     IPv6      0xcb9dbb4fb17eb0a5      0t0        UDP      *:mdns
+4560        backupsys         114u     IPv6      0x9c936965d6858433      0t0        UDP      *:mdns
+4560        backupsys         115u     IPv6      0xb7cdc3864dc70e24      0t0        UDP      *:mdns
+4560        backupsys         116u     IPv6      0x47448890995c8170      0t0        UDP      *:mdns
+4560        backupsys         117u     IPv4      0x342c6e450b66e667      0t0        UDP      *:mdns
+4560        backupsys         118u     IPv4      0xb3a636a41d7b917b      0t0        UDP      *:mdns
+4560        backupsys         119u     IPv6      0x91712afc30c40ba7      0t0        UDP      *:mdns
+4560        backupsys         126u     IPv4      0xd16f359f78cdd9db      0t0        UDP      *:mdns
+4560        backupsys         127u     IPv6      0x807bcad9653e6e4e      0t0        UDP      *:mdns
+4560        backupsys         128u     IPv6      0x70507ea1fa7ea926      0t0        UDP      *:mdns
+4560        backupsys         129u     IPv6      0x6325e6e62594af26      0t0        UDP      *:mdns
+4560        backupsys         130u     IPv6      0x9a660dd783c61615      0t0        UDP      *:mdns
+4560        backupsys         131u     IPv6      0x2e4732979f8e339a      0t0        UDP      *:mdns
+4560        backupsys         132u     IPv6      0x71ac1863082a520c      0t0        UDP      *:mdns
+4560        backupsys         133u     IPv4      0xe9b404544579683d      0t0        UDP      *:mdns
+4560        backupsys         134u     IPv4      0x8c6db73a738dd05a      0t0        UDP      *:mdns
+4560        backupsys         135u     IPv6      0x7bbe07ae158cc43f      0t0        UDP      *:mdns
+4586        backupsys         37u      IPv4      0xb14b60820c2ce124      0t0        TCP      10.75.34.13:54531->52.96.79.2:https (ESTABLISHED)
+4586        backupsys         40u      IPv4      0x7661d2fec45fc3fe      0t0        TCP      10.75.34.13:57944->52.96.79.34:https (ESTABLISHED)
+4586        backupsys         41u      IPv4      0xcae26f3617b81ecf      0t0        TCP      10.75.34.13:56827->52.123.128.14:https (ESTABLISHED)
+5003        backupsys         9u       IPv4      0x291f59dfab8dc3d2      0t0        TCP      10.75.34.13:50976->17.248.232.65:https (CLOSED)
+11283       root              3u       IPv4      0x28af47068aab166       0t0        TCP      *:65535 (LISTEN)
+11283       root              4u       IPv4      0x978bd7ea5798e7cd      0t0        UDP      localhost:49152
+11283       root              5u       IPv4      0xa78d60cbaec39fb       0t0        TCP      localhost:65535->localhost:57358 (ESTABLISHED)
+11286       root              18u      IPv4      0x49416cdd24074b15      0t0        TCP      localhost:18313 (LISTEN)
+11286       root              34u      IPv4      0xfc0fb87f6467714a      0t0        TCP      localhost:18313->localhost:57363 (ESTABLISHED)
+11290       root              4u       IPv4      0xd2516853feae2c82      0t0        TCP      localhost:57358->localhost:65535 (ESTABLISHED)
+11290       root              7u       IPv4      0x6630ecd2dc02928       0t0        TCP      *:55296 (LISTEN)
+11290       root              12u      IPv4      0x8b070f9c46d8fa03      0t0        TCP      localhost:57363->localhost:18313 (ESTABLISHED)
+17474       backupsys         30u      IPv4      0x9ef3ae07dd45a81c      0t0        TCP      10.75.34.13:50243->20.59.87.226:https (ESTABLISHED)
+17474       backupsys         31u      IPv4      0x9ef3ae07dd45a81c      0t0        TCP      10.75.34.13:50243->20.59.87.226:https (ESTABLISHED)
+17475       backupsys         22u      IPv6      0xff5a8349cafadcdf      0t0        TCP      localhost:42050 (LISTEN)
+22068       _netbios          3u       IPv4      0x52f2eca396456452      0t0        UDP      *:netbios-ns
+22068       _netbios          4u       IPv4      0xcb1e859d351a9728      0t0        UDP      *:netbios-dgm
+25470       backupsys         28u      IPv4      0x8d7ea27ca2b0428a      0t0        TCP      10.75.34.13:57969->a23-33-22-150.deploy.static.akamaitechnologies.com:https (CLOSED)
+27999       backupsys         33u      IPv4      0xed31b82305b2ee1c      0t0        TCP      10.75.34.13:56379->170.114.52.2:https (CLOSE_WAIT)
+27999       backupsys         38u      IPv4      0x3073c3ddb8b824cf      0t0        TCP      10.75.34.13:56380->170.114.52.2:https (CLOSE_WAIT)
+27999       backupsys         62u      IPv4      0x910cbdfad9041981      0t0        TCP      10.75.34.13:65534->170-114-4-232.zoom.us:https (ESTABLISHED)
+27999       backupsys         65u      IPv4      0xece6c99c84d3acb3      0t0        TCP      10.75.34.13:56383->40.126.27.163:https (CLOSED)
+27999       backupsys         73u      IPv4      0xbf48b5187006a011      0t0        TCP      10.75.34.13:49185->170-114-1-173.zoom.us:https (ESTABLISHED)
+33424       root              3u       IPv4      0x3da1755a934755e6      0t0        UDP      *:*
+37397       root              73u      IPv4      0x1bb8a1eb4b51a59e      0t0        TCP      localhost:17473 (LISTEN)
+40400       backupsys         11u      IPv4      0xe245a3fbf9f635c6      0t0        TCP      10.75.34.13:58089->ec2-44-196-125-45.compute-1.amazonaws.com:https (ESTABLISHED)
+40400       backupsys         12u      IPv4      0xf4f528a013e54f2b      0t0        TCP      10.75.34.13:58090->ec2-18-116-22-140.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+40400       backupsys         13u      IPv4      0x1d45c0213057eb55      0t0        TCP      10.75.34.13:58093->ec2-3-131-144-101.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+40400       backupsys         14u      IPv4      0xe96d8ef061043bce      0t0        TCP      10.75.34.13:58095->a1370dc23e25e46ce.awsglobalaccelerator.com:https (ESTABLISHED)
+40400       backupsys         15u      IPv4      0x1b082a9a8b85e6d8      0t0        TCP      10.75.34.13:58097->server-18-160-225-73.ord58.r.cloudfront.net:https (ESTABLISHED)
+40400       backupsys         16u      IPv4      0xfe73976fa7bb73dc      0t0        TCP      10.75.34.13:58099->ec2-3-131-144-101.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+51857       backupsys         22u      IPv4      0x260af411fdcd96c8      0t0        TCP      10.75.34.13:53489->a23-212-6-235.deploy.static.akamaitechnologies.com:https (CLOSED)
+56741       root              5u       IPv4      0x8ebe682e1bcdd2b9      0t0        TCP      10.75.34.13:cslistener->server-3-162-163-79.ord56.r.cloudfront.net:52598 (ESTABLISHED)
+56741       root              8u       IPv4      0x34a541dd7b2d5284      0t0        TCP      10.75.34.13:cslistener->52.96.79.2:54531 (ESTABLISHED)
+56741       root              9u       IPv4      0xa6fa6bcb4d357af9      0t0        TCP      10.75.34.13:cslistener->ec2-52-14-14-157.us-east-2.compute.amazonaws.com:58066 (ESTABLISHED)
+56741       root              13u      IPv4      0x911bb446845ec1d4      0t0        RAW      172.16.0.17:*
+56741       root              15u      IPv4      0x38618c8b1031d335      0t0        TCP      localhost:54533->localhost:cslistener (CLOSE_WAIT)
+56741       root              16u      IPv4      0xc69a4b9ea36c9bdd      0t0        TCP      172.16.0.17:54534->165.225.50.21:http (CLOSE_WAIT)
+56741       root              17u      IPv6      0x235e0d5c3a50341c      0t0        UDP      [fc00::6440:1]:56024
+56741       root              18u      IPv4      0x8200a9ec3274273       0t0        UDP      10.75.34.13:56024
+56741       root              19u      IPv4      0x7057cc619a7338fb      0t0        TCP      10.75.34.13:cslistener (LISTEN)
+56741       root              20u      IPv6      0x6127876dd5039695      0t0        TCP      [fc00::6440:1]:cslistener (LISTEN)
+56741       root              21u      IPv4      0x367a9a82fbbdd3fc      0t0        TCP      localhost:cslistener (LISTEN)
+56741       root              22u      IPv4      0x75727b839843b384      0t0        TCP      *:* (CLOSED)
+56741       root              23u      IPv4      0x77283df1857fdd11      0t0        TCP      10.75.34.13:52599->server-3-162-163-79.ord56.r.cloudfront.net:https (ESTABLISHED)
+56741       root              24u      IPv4      0xec6b04c0024886f7      0t0        TCP      10.75.34.13:cslistener->ec2-54-183-140-32.us-west-1.compute.amazonaws.com:49252 (ESTABLISHED)
+56741       root              25u      IPv4      0x6d0462a3cde4b4dc      0t0        TCP      10.75.34.13:58067->ec2-52-14-14-157.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              26u      IPv4      0xbad33a95cf082271      0t0        TCP      *:* (CLOSED)
+56741       root              27u      IPv4      0x2e2d3c9d556ae4c0      0t0        TCP      localhost:cslistener->localhost:54533 (FIN_WAIT_2)
+56741       root              28u      IPv4      0xab0b2ff383f75c52      0t0        UDP      172.16.0.17:55790->165.225.242.44:https
+56741       root              29u      IPv4      0x5e4dfc9239f52ecb      0t0        TCP      10.75.34.13:54532->52.96.79.2:https (ESTABLISHED)
+56741       root              30u      IPv4      0xa483c832813715a3      0t0        TCP      *:* (CLOSED)
+56741       root              31u      IPv4      0x74a2ac364b8b86c2      0t0        TCP      10.75.34.13:cslistener->13.107.246.38:57942 (FIN_WAIT_2)
+56741       root              32u      IPv4      0xb9f3fccd5109df92      0t0        TCP      10.75.34.13:57943->13.107.246.38:https (CLOSE_WAIT)
+56741       root              33u      IPv4      0xabeff0e777652d7d      0t0        TCP      10.75.34.13:cslistener->45.55.122.20:57002 (ESTABLISHED)
+56741       root              34u      IPv4      0x97010fe346c1eddf      0t0        TCP      *:* (CLOSED)
+56741       root              35u      IPv4      0x2678584e33aa70c2      0t0        TCP      10.75.34.13:57003->45.55.122.20:https (ESTABLISHED)
+56741       root              36u      IPv4      0x58f05d1c5d700691      0t0        TCP      *:* (CLOSED)
+56741       root              37u      IPv4      0x9becc42433346066      0t0        TCP      10.75.34.13:cslistener->52.123.128.14:56827 (ESTABLISHED)
+56741       root              38u      IPv4      0xeda9b5568caa654b      0t0        TCP      172.16.0.17:56828->52.123.128.14:https (ESTABLISHED)
+56741       root              39u      IPv4      0x88b6e64adb3d01f3      0t0        TCP      10.75.34.13:49253->ec2-54-183-140-32.us-west-1.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              40u      IPv4      0x1bb658ccf35fb205      0t0        TCP      10.75.34.13:cslistener->52.96.79.34:57944 (ESTABLISHED)
+56741       root              41u      IPv4      0x39603f2802b00638      0t0        TCP      *:* (CLOSED)
+56741       root              42u      IPv4      0xf21637884939c9ab      0t0        TCP      10.75.34.13:57945->52.96.79.34:https (ESTABLISHED)
+56741       root              43u      IPv4      0x3a5d4f11d14821b5      0t0        TCP      10.75.34.13:cslistener->cdn-185-199-108-133.github.com:54298 (FIN_WAIT_2)
+56741       root              44u      IPv4      0x8d1b500c29419b09      0t0        TCP      10.75.34.13:54299->cdn-185-199-108-133.github.com:https (CLOSE_WAIT)
+56741       root              45u      IPv4      0x55ae52fc9161d7bb      0t0        TCP      10.75.34.13:cslistener->45.55.122.20:64850 (CLOSED)
+56741       root              46u      IPv4      0x11b9e5e2def05d37      0t0        TCP      10.75.34.13:64851->45.55.122.20:https (FIN_WAIT_2)
+56741       root              47u      IPv4      0xe6c349cf44235585      0t0        TCP      *:* (CLOSED)
+56741       root              48u      IPv4      0x127449b52726308       0t0        TCP      *:* (CLOSED)
+56741       root              49u      IPv4      0x34d78df175201143      0t0        TCP      10.75.34.13:cslistener->ec2-3-20-1-85.us-east-2.compute.amazonaws.com:49199 (ESTABLISHED)
+56741       root              50u      IPv4      0x6fff68ac03623c66      0t0        TCP      10.75.34.13:cslistener->ec2-3-20-1-85.us-east-2.compute.amazonaws.com:49195 (ESTABLISHED)
+56741       root              51u      IPv4      0xb0cd53af7b662538      0t0        TCP      10.75.34.13:cslistener->server-108-156-120-83.ord56.r.cloudfront.net:65072 (FIN_WAIT_2)
+56741       root              52u      IPv4      0xdb0be7a13d7eb29       0t0        TCP      10.75.34.13:49200->ec2-3-20-1-85.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              53u      IPv4      0xa2d570244b548d0a      0t0        TCP      *:* (CLOSED)
+56741       root              54u      IPv4      0x1b986ece93dad2d5      0t0        TCP      10.75.34.13:65073->server-108-156-120-83.ord56.r.cloudfront.net:https (CLOSE_WAIT)
+56741       root              55u      IPv4      0xc56a245fc1d03438      0t0        TCP      10.75.34.13:cslistener->45.55.122.20:64909 (CLOSED)
+56741       root              56u      IPv4      0x12ae0f4c62ca1d80      0t0        TCP      10.75.34.13:64912->45.55.122.20:https (FIN_WAIT_2)
+56741       root              57u      IPv4      0xb555fe02a5357574      0t0        TCP      172.16.0.17:65399->165.225.242.44:https (ESTABLISHED)
+56741       root              58u      IPv4      0x677be812be25785a      0t0        TCP      *:* (CLOSED)
+56741       root              59u      IPv4      0x241f821f05983978      0t0        TCP      *:* (CLOSED)
+56741       root              60u      IPv4      0x3bdd13fa517e9bce      0t0        TCP      10.75.34.13:49196->ec2-3-20-1-85.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              61u      IPv4      0x472a1f23457ff5be      0t0        TCP      *:* (CLOSED)
+56741       root              62u      IPv4      0xf65f7b1a64e7b894      0t0        TCP      172.16.0.17:65467->165.225.50.40:https (ESTABLISHED)
+56741       root              63u      IPv4      0x8e5b053720383449      0t0        TCP      10.75.34.13:cslistener->170.114.52.2:56379 (FIN_WAIT_2)
+56741       root              64u      IPv4      0xdfb2e8566075630       0t0        TCP      172.16.0.17:56381->170.114.52.2:https (CLOSE_WAIT)
+56741       root              65u      IPv4      0x9ff2995288880be9      0t0        TCP      10.75.34.13:cslistener->170-114-4-232.zoom.us:65534 (ESTABLISHED)
+56741       root              66u      IPv4      0x6b2809a11e388b55      0t0        TCP      172.16.0.17:49152->170-114-4-232.zoom.us:https (ESTABLISHED)
+56741       root              67u      IPv4      0x935c083e85cb9c0e      0t0        TCP      *:* (CLOSED)
+56741       root              68u      IPv4      0xbfa02985a9933436      0t0        TCP      *:* (CLOSED)
+56741       root              69u      IPv4      0x35ea442abdbb43a       0t0        TCP      10.75.34.13:cslistener->172.67.74.64:54300 (FIN_WAIT_2)
+56741       root              70u      IPv4      0xcb3fbbcf5084624d      0t0        TCP      *:* (CLOSED)
+56741       root              71u      IPv4      0x91b99ca5ea8d5032      0t0        TCP      *:* (CLOSED)
+56741       root              72u      IPv4      0x68c77cf9e62d7ca0      0t0        TCP      10.75.34.13:54301->172.67.74.64:https (CLOSE_WAIT)
+56741       root              73u      IPv4      0x8b619bbf8eb35705      0t0        TCP      10.75.34.13:cslistener->170.114.52.2:56380 (FIN_WAIT_2)
+56741       root              74u      IPv4      0x485e73fe300d5f28      0t0        TCP      10.75.34.13:cslistener->13.107.246.38:50523 (FIN_WAIT_2)
+56741       root              75u      IPv4      0xa57f03496bfcb8d5      0t0        TCP      10.75.34.13:50524->13.107.246.38:https (CLOSE_WAIT)
+56741       root              76u      IPv4      0x60d4a6960f21e141      0t0        TCP      172.16.0.17:56382->170.114.52.2:https (CLOSE_WAIT)
+56741       root              77u      IPv4      0xcd91bd3add682b75      0t0        TCP      10.75.34.13:cslistener->ec2-52-41-245-179.us-west-2.compute.amazonaws.com:56221 (ESTABLISHED)
+56741       root              78u      IPv4      0xe836e24d213e4829      0t0        TCP      10.75.34.13:56222->ec2-52-41-245-179.us-west-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              79u      IPv4      0x48f094e7055918c6      0t0        TCP      10.75.34.13:cslistener->ec2-3-130-95-182.us-east-2.compute.amazonaws.com:58077 (ESTABLISHED)
+56741       root              80u      IPv4      0xeae6013a806e80b6      0t0        TCP      10.75.34.13:58078->ec2-3-130-95-182.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              81u      IPv4      0x44509c340be1e6f2      0t0        TCP      10.75.34.13:cslistener->ord38s28-in-f4.1e100.net:57159 (ESTABLISHED)
+56741       root              82u      IPv4      0xb3c8b5b3687a62        0t0        UDP      172.16.0.17:57073->165.225.50.40:https
+56741       root              83u      IPv4      0xa463d2058f534fd4      0t0        TCP      *:* (CLOSED)
+56741       root              84u      IPv4      0xf34cae2e82a2a442      0t0        TCP      *:* (CLOSED)
+56741       root              85u      IPv4      0x5f3107aafc072552      0t0        TCP      *:* (CLOSED)
+56741       root              86u      IPv4      0xa401c319b88618f0      0t0        TCP      10.75.34.13:57164->ord38s28-in-f4.1e100.net:https (ESTABLISHED)
+56741       root              87u      IPv4      0x96d88f6640ead617      0t0        TCP      10.75.34.13:cslistener->ord38s28-in-f4.1e100.net:57160 (ESTABLISHED)
+56741       root              88u      IPv4      0xf8fc370856dfbe94      0t0        TCP      10.75.34.13:57163->ord38s28-in-f4.1e100.net:https (ESTABLISHED)
+56741       root              89u      IPv4      0xeea5be78271aef72      0t0        TCP      10.75.34.13:cslistener->ord38s30-in-f10.1e100.net:57165 (ESTABLISHED)
+56741       root              90u      IPv4      0xa69e8e74ab39101a      0t0        TCP      10.75.34.13:57166->ord38s30-in-f10.1e100.net:https (ESTABLISHED)
+56741       root              91u      IPv4      0x92d79a70bcad3c86      0t0        TCP      10.75.34.13:cslistener->ec2-3-233-158-26.compute-1.amazonaws.com:57883 (ESTABLISHED)
+56741       root              92u      IPv4      0x1cfe2df4b3046065      0t0        TCP      *:* (CLOSED)
+56741       root              93u      IPv4      0x932911640d383d72      0t0        TCP      10.75.34.13:57884->ec2-3-233-158-26.compute-1.amazonaws.com:https (ESTABLISHED)
+56741       root              94u      IPv4      0x50326cd665ab2af       0t0        TCP      10.75.34.13:cslistener->usmes2-vip-bx-001.aaplimg.com:58087 (ESTABLISHED)
+56741       root              95u      IPv4      0x7e20144328a1b5b4      0t0        TCP      10.75.34.13:cslistener->45.55.122.20:64896 (CLOSED)
+56741       root              96u      IPv4      0xa52e2fa7acf7ed48      0t0        TCP      10.75.34.13:64898->45.55.122.20:https (FIN_WAIT_2)
+56741       root              97u      IPv4      0xa52c80697cc370dc      0t0        TCP      *:* (CLOSED)
+56741       root              98u      IPv4      0x75abdda6a432448       0t0        TCP      10.75.34.13:58088->usmes2-vip-bx-001.aaplimg.com:https (ESTABLISHED)
+56741       root              99u      IPv4      0x8d3f425a124555a7      0t0        TCP      10.75.34.13:cslistener->ec2-44-196-125-45.compute-1.amazonaws.com:58089 (ESTABLISHED)
+56741       root              100u     IPv4      0x9624368eb73f8187      0t0        TCP      10.75.34.13:58091->ec2-44-196-125-45.compute-1.amazonaws.com:https (ESTABLISHED)
+56741       root              101u     IPv4      0xe95708a90a0d5014      0t0        TCP      10.75.34.13:cslistener->20.59.87.226:50243 (ESTABLISHED)
+56741       root              102u     IPv4      0x8ae0de72f109f594      0t0        TCP      10.75.34.13:50244->20.59.87.226:https (ESTABLISHED)
+56741       root              103u     IPv4      0xb553ca9e8658c2c       0t0        TCP      10.75.34.13:cslistener->ord38s33-in-f10.1e100.net:57173 (ESTABLISHED)
+56741       root              104u     IPv4      0xbc5a6832bb868add      0t0        TCP      10.75.34.13:57174->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+56741       root              105u     IPv4      0x716c34775c5cc123      0t0        TCP      10.75.34.13:cslistener->ord38s33-in-f10.1e100.net:57175 (ESTABLISHED)
+56741       root              106u     IPv4      0x46e19929a01a9f5e      0t0        TCP      10.75.34.13:57176->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+56741       root              107u     IPv4      0x1a5cb30dd8d3b924      0t0        TCP      10.75.34.13:cslistener->ord38s30-in-f1.1e100.net:57177 (ESTABLISHED)
+56741       root              108u     IPv4      0xb1f15a75ff8bfa2b      0t0        TCP      10.75.34.13:cslistener->170-114-1-173.zoom.us:49185 (ESTABLISHED)
+56741       root              109u     IPv4      0x583228a0573dccb       0t0        TCP      172.16.0.17:49186->170-114-1-173.zoom.us:https (ESTABLISHED)
+56741       root              110u     IPv4      0x3563d084b310dfdb      0t0        TCP      10.75.34.13:cslistener->45.55.122.20:64948 (CLOSED)
+56741       root              111u     IPv4      0x9e0e3acd6b589eb8      0t0        TCP      10.75.34.13:64952->45.55.122.20:https (FIN_WAIT_2)
+56741       root              112u     IPv4      0x8c34d26f92a07543      0t0        TCP      10.75.34.13:cslistener->45.55.122.20:64949 (CLOSED)
+56741       root              113u     IPv4      0x2c57927f0b6c633f      0t0        TCP      10.75.34.13:64953->45.55.122.20:https (FIN_WAIT_2)
+56741       root              114u     IPv4      0xe6fb5b02f59f50dc      0t0        TCP      10.75.34.13:57178->ord38s30-in-f1.1e100.net:https (ESTABLISHED)
+56741       root              115u     IPv4      0x56181f00f7457b22      0t0        TCP      10.75.34.13:cslistener->ec2-18-116-22-140.us-east-2.compute.amazonaws.com:58090 (ESTABLISHED)
+56741       root              116u     IPv4      0x5aefd88d97700145      0t0        TCP      10.75.34.13:58092->ec2-18-116-22-140.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              117u     IPv4      0xfb208e44680b0004      0t0        TCP      10.75.34.13:cslistener->ord38s33-in-f10.1e100.net:57181 (ESTABLISHED)
+56741       root              118u     IPv4      0x9027637267b57fdf      0t0        TCP      10.75.34.13:57182->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+56741       root              119u     IPv4      0xd76a505402b3fea6      0t0        TCP      10.75.34.13:cslistener->ec2-3-131-144-101.us-east-2.compute.amazonaws.com:58093 (ESTABLISHED)
+56741       root              120u     IPv4      0x2591fdc5881c5500      0t0        TCP      *:* (CLOSED)
+56741       root              121u     IPv4      0x6f66e022dd3e730a      0t0        TCP      10.75.34.13:58094->ec2-3-131-144-101.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              122u     IPv4      0xc0a75458dcd98083      0t0        TCP      10.75.34.13:cslistener->ord38s30-in-f1.1e100.net:57196 (ESTABLISHED)
+56741       root              123u     IPv4      0x5e49a2cb04fab22d      0t0        TCP      10.75.34.13:57198->ord38s30-in-f1.1e100.net:https (ESTABLISHED)
+56741       root              124u     IPv4      0x418a3d9ca230b3f4      0t0        TCP      10.75.34.13:cslistener->a1370dc23e25e46ce.awsglobalaccelerator.com:58095 (ESTABLISHED)
+56741       root              125u     IPv4      0xd5c92e12b9464a8       0t0        TCP      *:* (CLOSED)
+56741       root              126u     IPv4      0x1a1de943193a0795      0t0        TCP      *:* (CLOSED)
+56741       root              127u     IPv4      0xc932d9324b7b271e      0t0        TCP      10.75.34.13:58096->a1370dc23e25e46ce.awsglobalaccelerator.com:https (ESTABLISHED)
+56741       root              129u     IPv4      0xd55bb038234d4b46      0t0        TCP      10.75.34.13:cslistener->ord38s33-in-f10.1e100.net:57218 (ESTABLISHED)
+56741       root              130u     IPv4      0x1827d298a0041c00      0t0        TCP      10.75.34.13:57223->ord38s33-in-f10.1e100.net:https (ESTABLISHED)
+56741       root              131u     IPv4      0xed92819c9b2dda32      0t0        TCP      10.75.34.13:cslistener->172.217.2.46:57230 (ESTABLISHED)
+56741       root              132u     IPv4      0xc212e7eab3f5f606      0t0        TCP      10.75.34.13:57232->172.217.2.46:https (ESTABLISHED)
+56741       root              133u     IPv4      0x228eaac7091213f3      0t0        TCP      10.75.34.13:cslistener->server-18-160-225-73.ord58.r.cloudfront.net:58097 (ESTABLISHED)
+56741       root              134u     IPv4      0x18c0a9837014f6db      0t0        TCP      10.75.34.13:58098->server-18-160-225-73.ord58.r.cloudfront.net:https (ESTABLISHED)
+56741       root              135u     IPv4      0xcb136a3eb963bd0b      0t0        TCP      10.75.34.13:cslistener->ec2-3-131-144-101.us-east-2.compute.amazonaws.com:58099 (ESTABLISHED)
+56741       root              136u     IPv4      0xee312f27e00d8cc       0t0        TCP      10.75.34.13:58100->ec2-3-131-144-101.us-east-2.compute.amazonaws.com:https (ESTABLISHED)
+56741       root              137u     IPv4      0x9d9f7a4d7bb1a7a3      0t0        TCP      10.75.34.13:cslistener->ord37s35-in-f22.1e100.net:57354 (ESTABLISHED)
+56741       root              138u     IPv4      0xb01f9f9fc1fa1126      0t0        TCP      10.75.34.13:57377->ord37s35-in-f22.1e100.net:https (ESTABLISHED)
+56741       root              151u     IPv4      0x200f5918ff1f473c      0t0        TCP      10.75.34.13:cslistener->ord38s32-in-f3.1e100.net:57485 (ESTABLISHED)
+56741       root              152u     IPv4      0xb7a7b1f5cd82450b      0t0        TCP      10.75.34.13:57487->ord38s32-in-f3.1e100.net:https (ESTABLISHED)
+56741       root              153u     IPv4      0x13fe89d3d13b5776      0t0        TCP      10.75.34.13:cslistener->172.217.5.10:57486 (ESTABLISHED)
+56741       root              154u     IPv4      0x7d8e37c6285bfa7       0t0        TCP      10.75.34.13:57488->172.217.5.10:https (ESTABLISHED)
+56741       root              159u     IPv4      0xf594b2ff95bc9a58      0t0        TCP      10.75.34.13:cslistener->172.64.155.209:57507 (ESTABLISHED)
+56741       root              160u     IPv4      0xcc03dc45f3d8eb99      0t0        TCP      10.75.34.13:57508->172.64.155.209:https (ESTABLISHED)
+56741       root              165u     IPv4      0x843576990d9e792b      0t0        TCP      10.75.34.13:cslistener->104.18.35.23:55159 (ESTABLISHED)
+56741       root              166u     IPv4      0xac52674db952534b      0t0        TCP      10.75.34.13:55160->104.18.35.23:https (ESTABLISHED)
+56741       root              179u     IPv4      0x29cb4d82659cc47e      0t0        TCP      *:* (CLOSED)
+56741       root              202u     IPv4      0x2568142f5f52b7ab      0t0        TCP      10.75.34.13:cslistener->ord38s30-in-f10.1e100.net:57838 (ESTABLISHED)
+56741       root              203u     IPv4      0x945ffbd64bd83d91      0t0        TCP      10.75.34.13:57839->ord38s30-in-f10.1e100.net:https (ESTABLISHED)
+64864       backupsys         21u      IPv4      0xc6c2a02773784742      0t0        TCP      10.75.34.13:52598->server-3-162-163-79.ord56.r.cloudfront.net:https (ESTABLISHED)
+64864       backupsys         26u      IPv4      0x2718b9cc1f10eb1d      0t0        TCP      10.75.34.13:65072->server-108-156-120-83.ord56.r.cloudfront.net:https (CLOSE_WAIT)
+64866       backupsys         45u      IPv4      0x69b34cabf0ec1c2a      0t0        UDP      10.75.34.13:33421->251.91.13.37:dns (ESTABLISHED)
+72203       _trustd           16u      IPv4      0x2ccdc21d9561a7db      0t0        TCP      10.75.34.13:58087->usmes2-vip-bx-001.aaplimg.com:https (ESTABLISHED)
+72223       root              14u      IPv4      0xe8566064a422552c      0t0        TCP      10.75.34.13:56221->ec2-52-41-245-179.us-west-2.compute.amazonaws.com:https (ESTABLISHED)
+75875       backupsys         8u       IPv4      0x17564703fa43a2b       0t0        TCP      localhost:62931->localhost:62945 (ESTABLISHED)
+75875       backupsys         12u      IPv4      0x59eb721fe0d50780      0t0        TCP      localhost:62931 (LISTEN)
+76049       backupsys         3u       IPv4      0x8e50659708603c1a      0t0        TCP      localhost:62945->localhost:62931 (ESTABLISHED)
+80734       backupsys         21u      IPv4      0xb00e4194eae7c25e      0t0        TCP      10.75.34.13:54300->172.67.74.64:https (CLOSE_WAIT)
+80734       backupsys         26u      IPv4      0x45333e3e958376c8      0t0        TCP      10.75.34.13:54298->cdn-185-199-108-133.github.com:https (CLOSE_WAIT)
+82182       backupsys         18u      IPv4      0xdb238b63da73d2bc      0t0        TCP      10.75.34.13:57942->13.107.246.38:https (CLOSE_WAIT)
+82182       backupsys         23u      IPv4      0x69b34cabf0ec1c2a      0t0        TCP      10.75.34.13:50523->13.107.246.38:https (CLOSE_WAIT)
+83249       backupsys         32u      IPv4      0x763bca531bc830f5      0t0        TCP      10.75.34.13:49557->104.46.162.226:https (ESTABLISHED)
+83249       backupsys         49u      IPv4      0x8fd314f4e18adfd       0t0        TCP      10.75.34.13:52702->13.89.178.27:https (ESTABLISHED)
+83249       backupsys         51u      IPv4      0xc4e9046750ae956b      0t0        TCP      10.75.34.13:49295->20.50.201.200:https (ESTABLISHED)
