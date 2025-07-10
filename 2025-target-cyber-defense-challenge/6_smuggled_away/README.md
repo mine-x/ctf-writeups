@@ -6,16 +6,18 @@ Points: 500
 
 Determine the credit card expiration date and CVV and the customer email being exfiltrated in the PCAP provided in the previous challenge.
 
-## Decoding
+## Preparation
 
-Continuing from the last challenge, I searched for `dns and ip.addr == 251.91.13.37` in Wireshark and exported the 66 lines as CSV for analysis.
+Continuing from the last challenge, I searched for `dns and ip.addr == 251.91.13.37` in Wireshark and exported the output as CSV for analysis.
 Within the CSV, I extracted the domains, split by ".", and only kept the subdomains. I filtered on the Source/Destination IPs to only focus on compromised host (`bvlik`) to C2 (`251.91.13.37`) communications. Finally, I consolidated all subdomains into a single string:
 
 ```
 d6fqqaecfjjgqax7bxglcducgaiabuhz73remhou332tqyetdajb2zeqzgyway2mfzenv6x76ia665iwm4mk77pd3ygsbjbv6yqrp5hjqxr7us3qrffutqpqs3w3hqxqasrjuglwjtkr4g27dxmloddblphhtgw762oyehmxldaaxk4iunlbwjjbochhjqzh577bt4hmlrzqaaaa
 ```
 
-Onto the decoding. I used [decode.fr](./https://www.dcode.fr/en)'s cipher identifier tool and tried using the top 5-6 suggested encoding schemes, as well as [CyberChef](./https://gchq.github.io/CyberChef/)'s magic functionality, but didn't get anything close to human-readable text.
+## Decoding
+
+I used [decode.fr](./https://www.dcode.fr/en)'s cipher identifier tool and tried using the top 5-6 suggested encoding schemes, as well as [CyberChef](./https://gchq.github.io/CyberChef/)'s magic functionality, but didn't get anything close to human-readable text.
 
 After a healthy dose of struggling, I went back to the basics to research and better understand the binary-to-text encoding formats, how they work, and the differences between them - especially the most common ones like base32 and base64. I learned about padding, which is the addition of extra characters, usually equal signs, to the end of encoded data to ensure an appropriate length.
 
