@@ -15,9 +15,9 @@ Within the CSV, I extracted the domains, split by ".", and only kept the subdoma
 d6fqqaecfjjgqax7bxglcducgaiabuhz73remhou332tqyetdajb2zeqzgyway2mfzenv6x76ia665iwm4mk77pd3ygsbjbv6yqrp5hjqxr7us3qrffutqpqs3w3hqxqasrjuglwjtkr4g27dxmloddblphhtgw762oyehmxldaaxk4iunlbwjjbochhjqzh577bt4hmlrzqaaaa
 ```
 
-Onto the decoding. I used decode.fr's cipher identifier tool and tried using the top 5-6 suggested encoding schemes, as well as CyberChef's magic functionality, and didn't get anything close to readable text.
+Onto the decoding. I used [decode.fr](./https://www.dcode.fr/en)'s cipher identifier tool and tried using the top 5-6 suggested encoding schemes, as well as [CyberChef](./https://gchq.github.io/CyberChef/)'s magic functionality, but didn't get anything close to human-readable text.
 
-After a healthy amount of struggling, I went back to the basics to research and better understand the binary-to-text encoding formats, how they work, and the differences between them - especially the most common ones like base32 and base64. I learned about padding, which is the addition of extra characters, usually equal signs, to the end of encoded data to ensure an appropriate length.
+After a healthy dose of struggling, I went back to the basics to research and better understand the binary-to-text encoding formats, how they work, and the differences between them - especially the most common ones like base32 and base64. I learned about padding, which is the addition of extra characters, usually equal signs, to the end of encoded data to ensure an appropriate length.
 
 Then, I noticed that our encoded string ends in `aaaa`. Base32 encoding uses 1-6 characters of padding, whereas Base64 encoding uses 1-2 characters, while some other encoding schemes does not use padding at all. Additionally, the encoded string contains a to z letters in the same case + some numbers, which align with the characters used in Base32 as well.
 
