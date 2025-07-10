@@ -12,11 +12,11 @@ Find the commit ID where the malicious change was performed and obtain the malic
 
 Time to get more familiar with git:
 
-- .git directory: this contains all the metadata and object database for a project to manage the version history
-- `reflog` (found in `logs/HEAD`): reference log locally records every update to the HEAD (pointer to the current commit), branches, and other references - including commits, checkouts, resets, and rebases
+- `.git` directory: this contains all the metadata and object database for a project to manage the repo version history
+- `reflog` (found in `logs/HEAD`): the reference log locally records every update to the HEAD (pointer to the current commit), branches, and other references - including commits, checkouts, resets, and rebases
   - This is notably different from `git log`, which shows the linear commit history by recursively traversing the parent commits
 
-Even with limited background in Git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` was not accurate, and that was the key to getting back on the right track.
+Even with limited background in Git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` was not accurate, and this realization was the key for me to get back on the right track.
 
 ![reflog](./reflog.png)
 The first line shows that `malbye` (most likely the threat actor) had cloned backupy.git as observed in the previous challenge. Scrolling through the `reflog` output confirms that it is being displayed in chronological order (the version numbers are increasing). So, after cloning the repo, a rebase occurred, which rewrote the commit history by reapplying one branch `https://github.com/elesiuta/backupy.git` onto this branch. This was almost certainly performed to hide something suspicious. All subsequent actions shown in the `reflog` are rebase actions, except there was one commit (amend) action:
