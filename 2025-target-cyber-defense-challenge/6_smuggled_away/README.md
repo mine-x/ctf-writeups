@@ -21,7 +21,7 @@ After a healthy dose of struggling, I went back to the basics to research and be
 
 Then, I noticed that our encoded string ends in `aaaa`. Base32 encoding uses 1-6 characters of padding, whereas Base64 encoding uses 1-2 characters, while some other encoding schemes does not use padding at all. Additionally, the encoded string contains a to z letters in the same case + some numbers, which align with the characters used in Base32 as well.
 
-It's starting to look like Base32 is the most likely encoding scheme used. However, Base32 uses uppercase letters A-Z, while this string has lowercase letters. So the next step I took is to convert the lowercase to uppercase:
+It's starting to look like base32 is the most likely encoding scheme used. However, base32 uses uppercase letters A-Z, while this string has lowercase letters. So the next step I took is to convert the lowercase to uppercase:
 
 ```
 D6FQQAECFJJGQAX7BXGLCDUCGAIABUHZ73REMHOU332TQYETDAJB2ZEQZGYWAY2MFZENV6X76IA665IWM4MK77PD3YGSBJBV6YQRP5HJQXR7US3QRFFUTQPQS3W3HQXQASRJUGLWJTKR4G27DXMLODDBLPHHTGW762OYEHMXLDAAXK4IUNLBWJJBOCHHJQZH577BT4HMLRZQAAAA
