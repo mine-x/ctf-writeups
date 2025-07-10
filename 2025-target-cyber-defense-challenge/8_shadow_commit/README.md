@@ -8,24 +8,24 @@ The software responsible for the data exfiltration is one of Personalyz.io's int
 
 Find the commit ID where the malicious change was performed and obtain the malicious IP address.
 
-## Committed to finding this commit
+## Finding this commit
 
-Time to get more familiar with git:
+Getting more familiar with git:
 
 - `.git` directory: this contains all the metadata and object database for a project to manage the repo version history
 - `reflog` (found in `logs/HEAD`): the reference log locally records every update to the HEAD (pointer to the current commit), branches, and other references - including commits, checkouts, resets, and rebases
   - This is notably different from `git log`, which shows the linear commit history by recursively traversing the parent commits
 
-Even with limited background in Git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` was not accurate, and this realization was the key for me to get back on the right track.
+Even with limited background in git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` was not accurate, and this was the key for me to get back on the right track.
 
 ![reflog](./reflog.png)
-The first line shows that `malbye` (most likely the threat actor) had cloned backupy.git as observed in the previous challenge. Scrolling through the `reflog` output confirms that it is being displayed in chronological order (the version numbers are increasing). So, after cloning the repo, a rebase occurred, which rewrote the commit history by reapplying one branch `https://github.com/elesiuta/backupy.git` onto this branch. This was almost certainly performed to hide something suspicious. All subsequent actions shown in the `reflog` are rebase actions, except there was one commit (amend) action:
+The first line shows that `malbyte` (the threat actor) had cloned `backupy.git` as observed in the previous challenge. Scrolling through the `reflog` output confirms that it is being displayed in chronological order (the version numbers are increasing). So, after cloning the repo, a rebase occurred, which rewrote the commit history by reapplying one branch `https://github.com/elesiuta/backupy.git` onto this branch. This was almost certainly performed to hide something suspicious. All subsequent actions shown in the `reflog` are rebase actions, except there was one commit (amend) action:
 
 ```
 a50a7657e3a00c0aa63455d7ac81e73f69f273b1 b188b42c34f772d2d9ccc006692d65cd597fc57d erik <elesiuta@gmail.com> 1748528038 -0500	commit (amend): deprecate copy_function class attribute for newer FileOps
 ```
 
-Using a git bash terminal, I navigated to the location of the .git directory and entered the following commands to inspect the repository at the point of that specific commit, then used `git show b188b42c34f772d2d9ccc006692d65cd597fc57d` to display the commit details, including the textual diff that shows the changes made in that commit. The diff shows that `fileman.py` was modified to include a long encoded string:
+Using a git bash terminal, I navigated to the location of the `.git` directory and entered `git show b188b42c34f772d2d9ccc006692d65cd597fc57d` to display the commit details, including the textual diff showing the changes made in that commit. The diff shows that `fileman.py` was modified to include a long encoded string:
 
 ``` diff
 diff --git a/backupy/fileman.py b/backupy/fileman.py
