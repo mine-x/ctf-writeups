@@ -19,10 +19,10 @@ Helo: gwagm.co
 Msg_id: <1742692263.849341@gwagm.co>
 ```
 
-I tried searching for similar email subject, but this turned up too many false positives. I also searched for the email domain and user agent and did not find anything useful.  
+I tried looking for logs containing a similar email subject, but this turned up too many false positives. I also searched based on the email domain `gwagm.co` and user agent `XyzMailer` and did not find anything useful.  
 
-I went back to the known ransom email and took a closer look at other attributes. The "Path" shows an intermediary mail server with an IP address of `250.24.46.164`.
-Searching for this IP did turn up results - both the provided ransom email and another email sent one day prior.
+I went back to the known ransom email and took a closer look at the other attributes and noticed that "Path" shows an intermediary mail server with an IP address of `250.24.46.164`.
+Searching for this IP did turn up results - both the provided ransom email and another email that was sent out one day prior.
 ![opensearch_result](<opensearch.png>)
 
 The "Subject" indicates this email is indeed part of this incident.
