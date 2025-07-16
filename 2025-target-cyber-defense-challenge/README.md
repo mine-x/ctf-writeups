@@ -2,7 +2,9 @@
 
 ## Challenge Overview
 
-In Tier 1 of this CTF challenge, individual participants play the part of a Cyber Defense team to defend against threats. Then, the top 50 from Tier 2 move on to play from the attacker's side. The final top 10 from Tier 2 present their Challenge experience to Target & WiCys, as well as receive a scholarship to the WiCyS 2026 conference.
+In Tier 1 of this CTF challenge, individual participants play the part of a Cyber Defense team to defend against threats.
+The top 50 from Tier 1 move on to play in Tier 2 from the attacker's side.
+The final top 10 from Tier 2 present their Challenge experience to Target & WiCys, as well as receive a scholarship to the WiCyS 2026 conference.
 Learn more [here](https://www.wicys.org/benefits/cyber-defense-challenge-made-possible-by-target/).
 
 **Results:**
