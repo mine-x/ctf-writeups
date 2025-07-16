@@ -17,10 +17,13 @@ I first wanted to get a general understanding of what these commands/outputs are
 - history: tool that displays a list of commands used in the terminal session
 
 Recalling that the C2 IP address obtained in a previous challenge is `251.91.13.37`, I searched for this IP and found it in the `lsof` output:
+
 ![process_id](./process_id.png)
+
 This gave me the process ID `64866` and the username `backupsys`.
 
 I searched for this process ID in the ```ps``` output:
+
 ![user](./user.png)
 
 Here I saw that the command line that launched this process is `/usr/bin/jot`. So I searched for this command within the `bash-history` output:
@@ -32,6 +35,7 @@ sudo rm /usr/bin/jot
 ln -s /usr/bin/jot /usr/.local/bin/backupy
 /usr/bin/jot
 ```
+
 The series of commands above cloned a Git repo called backupy.git into a local folder named backupy, installed the Python package, removed the system binary `/usr/bin/jot` and created a symbolic link (i.e., shortcut) from `/usr/bin/jot` to `/usr/.local/bin/backupy`. This file path then gets executed. The malicious executable is `backupy`.
 
 The flag consists of the username on the backup server running the exfiltration process, the name of the executable file that created the exfiltration process, and the process ID of that exfiltration process.

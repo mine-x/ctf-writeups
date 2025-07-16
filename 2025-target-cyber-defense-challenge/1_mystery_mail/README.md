@@ -11,6 +11,7 @@ The first task is to determine the unknown sender's original IP address using th
 ## Email sender header
 
 ![ransom_email](<ransom_email.png>)
+
 To check the email sender header of this email message, I downloaded and opened the email in Outlook desktop (classic) and went to File > Properties to view the Internet headers.
 
 ```

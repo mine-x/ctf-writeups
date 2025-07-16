@@ -19,6 +19,7 @@ Getting more familiar with git:
 Even with limited background in git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` output was not accurate, and this was the key for me to get back on the right track.
 
 ![reflog](./reflog.png)
+
 The first line shows that `malbyte` (the threat actor) had cloned `backupy.git` as observed in the previous challenge. Scrolling through the `reflog` output confirms that it is being displayed in chronological order (the version numbers are increasing). So, after cloning the repo, a rebase occurred, which rewrote the commit history by reapplying one branch `https://github.com/elesiuta/backupy.git` onto this branch. This was almost certainly performed to hide something suspicious. All subsequent actions shown in the `reflog` are rebase actions, except there was one `commit (amend)` action:
 
 ```

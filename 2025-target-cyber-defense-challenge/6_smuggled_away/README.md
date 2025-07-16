@@ -30,9 +30,11 @@ D6FQQAECFJJGQAX7BXGLCDUCGAIABUHZ73REMHOU332TQYETDAJB2ZEQZGYWAY2MFZENV6X76IA665IW
 ```
 
 I plugged this in to CyberChef. It wasn't quite there yet, but this time I'm sure I'm on the right track with using the appropriate encoding scheme.
+
 ![decoded_from_base32](./base32.png)
 
-Next, I added the Magic operation to the recipe. Voila! The second step was Gunzip. Gzip is a format for data compression and decompression. 
+Next, I added the Magic operation to the recipe. Voila! The second step was Gunzip. Gzip is a format for data compression and decompression.
+
 ![fully_decoded](./decoded.png)
 
 This provided the final decoded output:

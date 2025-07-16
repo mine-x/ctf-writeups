@@ -23,6 +23,7 @@ I tried looking for logs containing a similar email subject, but this turned up 
 
 I went back to the known ransom email and took a closer look at the other attributes and noticed that "Path" shows an intermediary mail server with an IP address of `250.24.46.164`.
 Searching for this IP did turn up results - both the provided ransom email and another email that was sent out one day prior.
+
 ![opensearch_result](<opensearch.png>)
 
 The "Subject" indicates this email is indeed part of this incident.
