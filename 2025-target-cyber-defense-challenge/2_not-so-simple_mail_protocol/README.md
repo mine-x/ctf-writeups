@@ -27,5 +27,3 @@ Searching for this IP did turn up results - both the provided ransom email and a
 ![opensearch_result](<opensearch.png>)
 
 The "Subject" indicates this email is indeed part of this incident.
-
-**Flag:** ```tharris456@tgwnaagm.co```

@@ -39,5 +39,3 @@ ln -s /usr/bin/jot /usr/.local/bin/backupy
 The series of commands above cloned a Git repo called backupy.git into a local folder named backupy, installed the Python package, removed the system binary `/usr/bin/jot` and created a symbolic link (i.e., shortcut) from `/usr/bin/jot` to `/usr/.local/bin/backupy`. This file path then gets executed. The malicious executable is `backupy`.
 
 The flag consists of the username on the backup server running the exfiltration process, the name of the executable file that created the exfiltration process, and the process ID of that exfiltration process.
-
-**Flag:** ```backupsys_backupy_64866```

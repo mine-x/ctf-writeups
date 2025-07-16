@@ -32,5 +32,3 @@ I deleted the original banner file then created the symlink:
 Now `nc tethys.picoctf.net 59428` shows the banner info containing the flag!
 
 ![updated banner with flag](updated_banner.png)
-
-**Flag:** ```picoCTF{b4nn3r_gr4bb1n9_su((3sfu11y_a0e119d4}```

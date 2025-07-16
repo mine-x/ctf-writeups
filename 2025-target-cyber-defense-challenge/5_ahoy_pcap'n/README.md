@@ -21,5 +21,3 @@ I did a search for `dns.qry.type == "TXT"` and indeed, a number of matches came 
 ![dns_txt](dns_txt.png)
 
 All of these exchanges took place between the same two IPs, one internal (`10.75.34.13` which resolves to `bvlik`) and one external (`251.91.13.37`). In the queries, there is something odd about the FQDNs. While the domain names are recognizable names, these subdomains are not common subdomains or even human-readable text - for example, *jb2ze*.amazon.fr and *qzgyway*.pinchofyum.com. These suspicious subdomains are almost certainly encoded. This is a typical technique used in DNS tunneling to encode stolen data into DNS packets, which then get sent to a malicious DNS server and decoded by the threat actor to retrieve the data.
-
-**Flag:** ```bvlik_251.91.13.37```

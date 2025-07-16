@@ -25,5 +25,3 @@ It was a very cool experience to get to directly communicate with this "threat a
 ![negotiation4](negotiation4.png)
 
 The flag consists of a stolen customer email address and the verification codes from the negotiations.
-
-**Flag:** ```lelandRowland13058@live.com.au:CTF-RAN-A15F2541:CTF-DEA-0772AF5C```

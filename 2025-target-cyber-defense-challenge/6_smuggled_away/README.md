@@ -40,5 +40,3 @@ Next, I added the Magic operation to the recipe. Voila! The second step was Gunz
 This provided the final decoded output:
 
 ``Alec	SHERMAN	4167 East 3rd Spur	Central Islip	NY	11722	(215) 835-2392	alec@sbcglobal.net	342644019686141	0016	11/30``
-
-**Flag:** ```11/30_0016_alec@sbcglobal.net```

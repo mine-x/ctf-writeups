@@ -32,5 +32,3 @@ MIME-Version: 1.0
 There are several "Received" lines, each of which indicates a server that the email passed through. They are listed in reverse chronological order, seeing that the first "Received" line is Personalyz's own mail server.
 
 The last "Received" line shows the sender IP address.
-
-**Flag:** ```252.44.98.29```

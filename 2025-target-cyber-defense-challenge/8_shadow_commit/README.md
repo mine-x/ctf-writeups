@@ -95,8 +95,6 @@ f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()
 
 This code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as base64, and splits it into chunks. The chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
 
-**Flag:** ```251.91.13.37```
-
 ## Appendix
 
 Octal number conversions:
