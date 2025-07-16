@@ -1,6 +1,6 @@
 # picoGym
 
-Writeups of [picoGym](https://play.picoctf.org/practice) practice CTF exercises!
+My writeups of [picoGym](https://play.picoctf.org/practice) practice CTF challenges. Will be updated on an ongoing basis.
 
 Categories:
 
