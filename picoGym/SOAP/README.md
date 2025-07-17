@@ -15,7 +15,7 @@ This challenge provided the hint that this is a XML external entity injection (X
 
 I started off by examining the website using Chrome DevTools and found two JavaScript files in the Sources, `Details.Check.js` and `xmlDetailsCheckPayload.js`. The first JavaScript file adds an event listener to each "Details" button on the page, which triggers a function that uses Fetch API to send an XML payload that is defined in the second JavaScript file.
 
-Within the DevTools console, I tried to send a Fetch request with XXE injection. The objective here is to retrieve a file (/etc/passwd), so I did some research and found that this can be achieved by adding a payload like `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>`. This defines a XML entity (`xxe`) that refers to a local file on the server `/etc/passwd`. This entity is injected into the XML body as `&xxe;`, e.g., `<data> &xxe; </data>` ([Source: PortSwigger](https://portswigger.net/web-security/xxe)).
+Within the DevTools console, I tried to send a Fetch request with XXE injection. The objective here is to retrieve a file (/etc/passwd), so I did some research and found that this can be achieved by adding a payload like `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>`. This defines a XML entity (`xxe`) that refers to a local file on the server `/etc/passwd`. This entity is injected into the XML body as `&xxe;`, e.g., `<data> &xxe; </data>` ([reference: PortSwigger](https://portswigger.net/web-security/xxe)).
 
 However, I received a "method not allowed" error, indicating this server doesn't allow the POST method for this resource.
 
