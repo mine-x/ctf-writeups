@@ -31,6 +31,6 @@ With this request intercepted, I added in the XXE injection payload like before 
 
 ![xxe injection](xxe.png)
 
-Now I checked the website again and saw that the contents of `/etc/passwd` was returned, along with the flag.
+Now I checked the website again and saw that the content of `/etc/passwd` was returned, along with the flag.
 
 ![alt text](success.png)
