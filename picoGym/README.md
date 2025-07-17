@@ -7,6 +7,7 @@ Categories:
 * General skills
   * [dont-you-love-banners](./dont-you-love-banners/)
 * Binary exploitation
+  * [SOAP](./SOAP/)
 * Cryptography
 * Forensics
 * Web exploitation
