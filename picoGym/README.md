@@ -7,10 +7,11 @@ Categories:
 * General skills
   * [dont-you-love-banners](./dont-you-love-banners/)
 * Binary exploitation
-  * [SOAP](./SOAP/)
 * Cryptography
   * [no_padding_no_problem](./no_padding_no_problem/)
 * Forensics
+  * [MSB](./MSB/)
 * Web exploitation
+  * [SOAP](./SOAP/)
 * Reverse engineering
   * [safe_opener](./safe_opener/)
