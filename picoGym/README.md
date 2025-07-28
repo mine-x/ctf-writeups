@@ -7,6 +7,7 @@ Categories:
 * General skills
   * [dont-you-love-banners](./dont-you-love-banners/)
 * Binary exploitation
+  * [RPS](./RPS/)
 * Cryptography
   * [no_padding_no_problem](./no_padding_no_problem/)
 * Forensics
