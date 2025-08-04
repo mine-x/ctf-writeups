@@ -40,7 +40,7 @@ After searching through all zekes-logs, I determined which logs contained what p
 
 What we do have for this challenge was 3 OpenSearch log servers for us to use. Each log server supposedly had the same data, but upon closer inspection, that was clearly not the case. Many of the field names and values were different - but for the important values that we need to input to the API, those would be consistent across the servers. I used this approach to identify the fields that actually mattered and narrow down the values:
 
-| Log     | Data       | Common Value Across 3 Log Servers                      |
+| **Log** | **Data**   | **Common Value Across 3 Log Servers**                  |
 |---------|------------|--------------------------------------------------------|
 | Salmon  | First name | alta: `0ecb22`                                         |
 |         |            | alta: `5cfea3` (ended up being the correct value)      |
