@@ -9,8 +9,8 @@ Learn more [here](https://www.wicys.org/benefits/cyber-defense-challenge-made-po
 
 **Results:**
 
-Tier 1: TBD (points, number of tasks solved, ranking)  
-Tier 2: TBD (points, number of tasks solved, ranking)
+Tier 1: Ranked # out of 891 participants (12/12 solved, 4120 points, 1 hint used)  
+Tier 2: TBD (points, number of tasks solved)
 
 ## Tools and Skills
 
@@ -27,13 +27,15 @@ Tier 2: TBD (points, number of tasks solved, ranking)
 1. [Mystery mail](./1_mystery_mail/)
 2. [Not-so-simple mail protocol](./2_not-so-simple_mail_protocol/)
 3. [Ransom wrangler](./3_ransom_wrangler/)
-4. TBD
+4. [Trout of office](./4_trout_of_office/)
 5. [Ahoy PCAP'n!](./5_ahoy_pcap'n/)
 6. [Smuggled away](./6_smuggled_away/)
 7. [Endpoints and exfiltration](./7_endpoints_and_exfiltration/)
 8. [Shadow commit](./8_shadow_commit/)
-9. TBD
-10. TBD
+9. [Logging for truth](./9_logging_for_truth/)
+10. [Backup break-in](./10_backup_break-in/)
+11. [Semi-final boss](./11_semi-final_boss/)
+12. [Final boss](12_final_boss/)
 
 **Tier 2 - Offensive:**
 
