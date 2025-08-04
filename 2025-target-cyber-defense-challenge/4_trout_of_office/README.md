@@ -74,12 +74,12 @@ With the 3 pieces of information I've received via the endpoints so far, plus th
 
 Finally, we arrive at the last endpoint, `/cloudfront/cache/<numbers>/<yyyy>/<mm>/<dd>`. This one was tricky as well, but we received a small nudge from the challenge creators that there would be somewhere where we do not see a hyphen, but would need it. I put in DOB and SSN data I have, including the individual elements ('1969','07','22', etc.). This gave me the victim's full name, `Leland M ROWLAND`, in addition to the other details needed (system name and person record ID) in the response headers.
 
-| **API Endpoint** | **Input Data** | **Generated URL**| **Output Data** |
-|------------------|----------------|------------------|-----------------|
-| `/apps_per-SAPSOFT/p/<uuid>/<uuid>` | Input name data | `https://target-flask.chals.io/apps_per-SAPSOFT/p/5cfea3/d6c97d` | Name ID: `d0f5af22fb`|
-| `/l/a/<uuid>/?_a=<uuid>&cc=<uuid>&g=<uuid>`| Input address data | `https://target-flask.chals.io/l/a/59a95/?_a=19ebb9&cc=5c599a&g=387835` | Address ID: `7be54a88fa`|
-| `/okta/auth/client/<uuid>/cel?use=<uuid>&addr=<uuid>&pmt=<credit card number>` | Input Address ID, Name ID, credit card number, and random value | `https://target-flask.chals.io/okta/auth/client/d0f5af22fb/cel?use=123&addr=7be54a88fa&pmt=375524824238842` | DOB: `1969-07-22`<br>Header: `X-active: 11/28`|
+| **API Endpoint** |  **Input Data**  | **Generated URL**| **Output Data** |
+|------------------|------------------|------------------|-----------------|
+| `/apps_per-SAPSOFT/p/<uuid>/<uuid>` | First and last name data | `https://target-flask.chals.io/apps_per-SAPSOFT/p/5cfea3/d6c97d` | Name ID: `d0f5af22fb`|
+| `/l/a/<uuid>/?_a=<uuid>&cc=<uuid>&g=<uuid>`| Street, City, State, Postal code data | `https://target-flask.chals.io/l/a/59a95/?_a=19ebb9&cc=5c599a&g=387835` | Address ID: `7be54a88fa`|
+| `/okta/auth/client/<uuid>/cel?use=<uuid>&addr=<uuid>&pmt=<credit card number>` | Address ID, Name ID, credit card number, and random value | `https://target-flask.chals.io/okta/auth/client/d0f5af22fb/cel?use=123&addr=7be54a88fa&pmt=375524824238842` | DOB: `1969-07-22`<br>Header: `X-active: 11/28`|
 | `/vendor/salesforce/tuvok/<uuid>/<uuid>?v=<uuid>&b=<yyyy>-<mmm>-<dd>` | Ran script over all data including initial data + ID outputs<br>Correct input was `fname`, `lname`, Address ID and DOB | `https://target-flask.chals.io/vendor/salesforce/tuvok/d6c97d/5cfea3?v=7be54a88fa&b=1969-07-22` | SSN: `417-61-2282`|
-| `/cloudfront/cache/<numbers>/<yyyy>/<mm>/<dd>` | Input SSN and DOB | `https://target-flask.chals.io/cloudfront/cache/417-61-2282/1969/07/22` | Full name: `Leland M ROWLAND`<br>Computer system name: `z3Ke1zCo0l-007`<br>Person record ID: `d9847a3e25`|
+| `/cloudfront/cache/<numbers>/<yyyy>/<mm>/<dd>` | SSN and DOB | `https://target-flask.chals.io/cloudfront/cache/417-61-2282/1969/07/22` | Full name: `Leland M ROWLAND`<br>Computer system name: `z3Ke1zCo0l-007`<br>Person record ID: `d9847a3e25`|
 
 Overall, this was an intense exercise in log correlation, scripting, and trial and error, with what felt to me like a heavy emphasis on the trial and error part.
