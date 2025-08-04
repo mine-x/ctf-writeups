@@ -19,11 +19,11 @@ d6fqqaecfjjgqax7bxglcducgaiabuhz73remhou332tqyetdajb2zeqzgyway2mfzenv6x76ia665iw
 
 I used [decode.fr](./https://www.dcode.fr/en)'s cipher identifier tool and tried using the top 5-6 suggested encoding schemes, as well as [CyberChef](./https://gchq.github.io/CyberChef/)'s magic functionality, but didn't get anything close to human-readable text.
 
-After a healthy dose of struggling, I went back to the basics to research and better understand the binary-to-text encoding formats, how they work, and the differences between them - especially the most common ones like base32 and base64. I learned about padding, which is the addition of extra characters, usually equal signs, to the end of encoded data to ensure an appropriate length.
+After a healthy dose of struggling, I went back to the basics to research and better understand the binary-to-text encoding formats, how they work, and the differences between them - especially the most common ones like Base32 and Base64. I learned about padding, which is the addition of extra characters, usually equal signs, to the end of encoded data to ensure an appropriate length.
 
-Then, I noticed that our encoded string ends in `aaaa`. Base32 encoding uses 1-6 characters of padding, whereas Base64 encoding uses 1-2 characters, while some other encoding schemes does not use padding at all. Additionally, the encoded string contains a to z letters in the same case + some numbers, which align with the characters used in base32 as well.
+Then, I noticed that our encoded string ends in `aaaa`. Base32 encoding uses 1-6 characters of padding, whereas Base64 encoding uses 1-2 characters, while some other encoding schemes does not use padding at all. Additionally, the encoded string contains a to z letters in the same case + some numbers, which align with the characters used in Base32 as well.
 
-It's starting to look like base32 is the most likely encoding scheme used. However, base32 uses uppercase letters A-Z, while this string has all lowercase letters. So, the next step I took is to convert the lowercase letters to uppercase:
+It's starting to look like Base32 is the most likely encoding scheme used. However, Base32 uses uppercase letters A-Z, while this string has all lowercase letters. So, the next step I took is to convert the lowercase letters to uppercase:
 
 ```
 D6FQQAECFJJGQAX7BXGLCDUCGAIABUHZ73REMHOU332TQYETDAJB2ZEQZGYWAY2MFZENV6X76IA665IWM4MK77PD3YGSBJBV6YQRP5HJQXR7US3QRFFUTQPQS3W3HQXQASRJUGLWJTKR4G27DXMLODDBLPHHTGW762OYEHMXLDAAXK4IUNLBWJJBOCHHJQZH577BT4HMLRZQAAAA

