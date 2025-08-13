@@ -51,7 +51,7 @@ The machine type was a bit more tricky. At first, I thought I could plug in the 
 
 ![bad decrypt](bad_decrypt.png)
 
-I then learned that MACHTYPE could be a longer name like `armv7l-unknown-linux-gnueabihf`. So, I grep'ed for "MACHTYPE" within the partition, and this led me to the `/usr/bin/bashbug` file which defined MACHTYPE as `arm-unknown-linux-gnueabihf`.
+I then learned that the standard Unix format for the $MACHTYPE environment variable is `cpu-company-system`, such as `x86_64-pc-linux-gnu`. So, I grep'ed for "MACHTYPE" within the partition, and this led me to the `/usr/bin/bashbug` file which defined MACHTYPE as `arm-unknown-linux-gnueabihf`.
 
 ![machine type found](MACHTYPE.png)
 
