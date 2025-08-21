@@ -9,7 +9,7 @@ Learn more [here](https://www.wicys.org/benefits/cyber-defense-challenge-made-po
 
 **Results:**
 
-Tier 1: Ranked # out of 891 participants (12/12 solved, 4120 points, 1 hint used)  
+Tier 1: Ranked 13 out of 891 participants (12/12 solved, 4120 points, 1 hint used)  
 Tier 2: TBD (points, number of tasks solved)
 
 ## Tools and Skills
