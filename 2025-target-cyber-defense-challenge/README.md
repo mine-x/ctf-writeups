@@ -19,6 +19,8 @@ Tier 2: TBD (points, number of tasks solved)
 - Wireshark PCAP analysis
 - CyberChef encoding/decoding
 - git commands
+- windows registry forensics
+- Disk image forensics
 
 ## Table of Contents
 
