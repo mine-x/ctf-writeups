@@ -9,8 +9,17 @@ Learn more [here](https://www.wicys.org/benefits/cyber-defense-challenge-made-po
 
 **Results:**
 
-Tier 1: Ranked # out of 891 participants (12/12 solved, 4120 points, 1 hint used)  
-Tier 2: TBD (points, number of tasks solved)
+Tier 1:
+
+- 12 out of 12 challenges solved
+- 4120 out of 4210 total possible points
+- Placed in top 15 out of 891 participants
+
+Tier 2:
+
+- 10 out of 11 challenges solved
+- 12150 out of 12900 total possible points
+- Placed in top 30 out of 50 participants
 
 ## Tools and Skills
 
@@ -18,7 +27,14 @@ Tier 2: TBD (points, number of tasks solved)
 - Ransomware negotiation
 - Wireshark PCAP analysis
 - CyberChef encoding/decoding
-- git commands
+- Git commands
+- windows registry forensics
+- Disk image forensics
+- Server-side template injection
+- Local file inclusion
+- Living off the land, privilege escalation
+- LDAP and SMB enumeration
+- Password cracking
 
 ## Table of Contents
 
@@ -39,4 +55,13 @@ Tier 2: TBD (points, number of tasks solved)
 
 **Tier 2 - Offensive:**
 
-1. TBD
+1. [Remarkable resume](./o1_remarkable_resume/)
+2. [Touchy templates](./o2.1_touchy_templates/)
+3. [Friendly files](./o2.2_friendly_files/)
+4. [Naughty network](./o2.3_naughty_network/)
+5. [Escalation of power](./o3_escalation_of_power/)
+6. [Permission pathways](./o4.1_permission%20pathways/)
+7. [Lousy LDAP](./o4.2_lousy_ldap/)
+8. [Suspicious SMB](./o4.3_suspicious_smb/)
+9. [Legal lockbox](./o4.4_legal_lockbox/)
+10. [Mystery messenger](./o4.5_mystery_messenger/)

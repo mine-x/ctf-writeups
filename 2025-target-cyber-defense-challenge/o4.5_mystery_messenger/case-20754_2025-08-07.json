@@ -1,0 +1,129 @@
+[
+    {
+        "subtype": "channel_join",
+        "user": "U099JC73VK6",
+        "text": "<@U099JC73VK6> has joined the channel",
+        "type": "message",
+        "ts": "1754589106.378669"
+    },
+    {
+        "user": "U099JC73VK6",
+        "type": "message",
+        "ts": "1754589142.132029",
+        "client_msg_id": "9b87062f-c2f6-4b91-8d58-75814dab03e8",
+        "text": "You are not to share this with anybody. Keep this under wraps",
+        "team": "T099JC739CL",
+        "user_team": "T099JC739CL",
+        "source_team": "T099JC739CL",
+        "user_profile": {
+            "avatar_hash": "766cd64c3705",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2025-08-07\/9318043052630_766cd64c37055157bb46_72.jpg",
+            "first_name": "Niaj",
+            "real_name": "Niaj Martin",
+            "display_name": "",
+            "team": "T099JC739CL",
+            "name": "foster.jacobdean",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8OHlI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "You are not to share this with anybody. Keep this under wraps"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "text": "",
+        "files": [
+            {
+                "id": "F099ADULZCK",
+                "created": 1754589166,
+                "timestamp": 1754589166,
+                "name": "CASE20754_Report.pdf",
+                "title": "CASE20754_Report.pdf",
+                "mimetype": "application\/pdf",
+                "filetype": "pdf",
+                "pretty_type": "PDF",
+                "user": "U099JC73VK6",
+                "user_team": "T099JC739CL",
+                "editable": false,
+                "size": 2428,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T099JC739CL-F099ADULZCK\/case20754_report.pdf?t=xoxe-9324415111428-9306906535399-9344018232992-845444d2888c41787d54c45c1e222ee3",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T099JC739CL-F099ADULZCK\/download\/case20754_report.pdf?t=xoxe-9324415111428-9306906535399-9344018232992-845444d2888c41787d54c45c1e222ee3",
+                "media_display_type": "unknown",
+                "thumb_pdf": "https:\/\/files.slack.com\/files-tmb\/T099JC739CL-F099ADULZCK-dd3f5f0925\/case20754_report_thumb_pdf.png?t=xoxe-9324415111428-9306906535399-9344018232992-845444d2888c41787d54c45c1e222ee3",
+                "thumb_pdf_w": 909,
+                "thumb_pdf_h": 1286,
+                "permalink": "https:\/\/personalyzio.slack.com\/files\/U099JC73VK6\/F099ADULZCK\/case20754_report.pdf",
+                "permalink_public": "https:\/\/slack-files.com\/T099JC739CL-F099ADULZCK-032978d49f",
+                "is_starred": false,
+                "skipped_shares": true,
+                "has_rich_preview": false,
+                "file_access": "visible"
+            }
+        ],
+        "upload": false,
+        "user": "U099JC73VK6",
+        "display_as_bot": false,
+        "type": "message",
+        "ts": "1754589169.247629",
+        "client_msg_id": "9eeb1549-2db8-4f8d-a1af-3d2a8b7f9c4b"
+    },
+    {
+        "user": "U099EAC890S",
+        "type": "message",
+        "ts": "1754589233.249279",
+        "client_msg_id": "59414a1f-fddd-4ebb-a51f-f2997bbcdeaa",
+        "text": "Got it",
+        "team": "T099JC739CL",
+        "user_team": "T099JC739CL",
+        "source_team": "T099JC739CL",
+        "user_profile": {
+            "avatar_hash": "152df358ac31",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2025-08-07\/9335175449921_152df358ac319939fc2c_72.jpg",
+            "first_name": "Ivan",
+            "real_name": "Ivan Jones",
+            "display_name": "Ivan Jones",
+            "team": "T099JC739CL",
+            "name": "jacob.foster",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1z2WW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Got it"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
