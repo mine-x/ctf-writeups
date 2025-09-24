@@ -28,7 +28,7 @@ Tier 2:
 - Wireshark PCAP analysis
 - CyberChef encoding/decoding
 - Git commands
-- windows registry forensics
+- Windows registry forensics
 - Disk image forensics
 - Server-side template injection
 - Local file inclusion
